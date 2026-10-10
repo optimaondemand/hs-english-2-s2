@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.R.1.1; ELA.10.R.3.1" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(6)(C); TEKS 110.37(c)(8)(E)" />
+<title>English 2 &middot; The Valley of Ashes</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #EEF1F8 0%, #F4F6FA 100%); border: 1px solid #C7D0E5; border-left: 5px solid #3B4E8C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #3B4E8C; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #3B4E8C; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #FDF3E3; border-color: #C7922C; color: #7A5A17; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #FDF3E3; border-left: 3px solid #C7922C; color: #7A5A17; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ws-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 14px 18px; margin-bottom: 10px; }
+    .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 16px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH 2</div>
+    <div style="font-size: 18px; color: #55c8e8;">Quarter 4 &middot; Module 4: The Great Gatsby, The American Dream and Its Cost &middot; Week 2</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #1a2340;">The Great Gatsby: The American Dream and Its Cost</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Week / Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Week 2</div>
+        <div style="font-size: 12px; color: #1a2340;">Literature</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Great Gatsby</div>
+        <div style="font-size: 12px; color: #1a2340;">F. Scott Fitzgerald, 1925 (public domain)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The American Dream and Its Cost</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Week 2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Valley of Ashes</div>
+        <div style="font-size: 16px; color: #1a2340;">Literature &middot; Week 2</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY&rsquo;S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Halfway between the Eggs and the city lies a wasteland with a pair of painted eyes. The place and its sign are the chapter&rsquo;s two chief images.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Chapter 2 introduces a setting that is a social fact: the dumping ground that the rich pass through and the poor live in. It also introduces a symbol, an object that carries meaning beyond itself.</div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> explain how the valley of ashes functions as setting and as symbol.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> describe what the eyes of Doctor T. J. Eckleburg are and what the text says they do.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> show how Myrtle&rsquo;s apartment and her change of dress express a wish for class.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; READING</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;">Read Chapter 2. Full text free at <a href="https://www.gutenberg.org/ebooks/64317" style="color:#3B4E8C;">Gutenberg ebook #64317</a>.</div>
+        <div class="embed-reading" data-src="gatsby" data-part="2"><details class="embed-reading-panel" data-ra-skip style="border:1px solid #D0D9E8;border-left:5px solid #C7922C;border-radius:8px;margin:16px 0;background:#FFFFFF;"><summary style="cursor:pointer;padding:12px 16px;font-size:14px;color:#0E1C42;background:#FDF3E3;border-radius:6px;"><strong>&#128214; Read the full text: The Great Gatsby, Chapter II</strong></summary><div style="padding:16px 20px;font-size:15px;line-height:1.65;color:#1a2340;max-height:560px;overflow-y:auto;"><p style="margin:0 0 12px;">About halfway between West Egg and New York the motor road hastily joins the railroad and runs beside it for a quarter of a mile, so as to shrink away from a certain desolate area of land. This is a valley of ashes—a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens; where ashes take the forms of houses and chimneys and rising smoke and, finally, with a transcendent effort, of ash-grey men, who move dimly and already crumbling through the powdery air. Occasionally a line of grey cars crawls along an invisible track, gives out a ghastly creak, and comes to rest, and immediately the ash-grey men swarm up with leaden spades and stir up an impenetrable cloud, which screens their obscure operations from your sight.</p>
+<p style="margin:0 0 12px;">But above the grey land and the spasms of bleak dust which drift endlessly over it, you perceive, after a moment, the eyes of Doctor T. J. Eckleburg. The eyes of Doctor T. J. Eckleburg are blue and gigantic—their retinas are one yard high. They look out of no face, but, instead, from a pair of enormous yellow spectacles which pass over a nonexistent nose. Evidently some wild wag of an oculist set them there to fatten his practice in the borough of Queens, and then sank down himself into eternal blindness, or forgot them and moved away. But his eyes, dimmed a little by many paintless days, under sun and rain, brood on over the solemn dumping ground.</p>
+<p style="margin:0 0 12px;">The valley of ashes is bounded on one side by a small foul river, and, when the drawbridge is up to let barges through, the passengers on waiting trains can stare at the dismal scene for as long as half an hour. There is always a halt there of at least a minute, and it was because of this that I first met Tom Buchanan’s mistress.</p>
+<p style="margin:0 0 12px;">The fact that he had one was insisted upon wherever he was known. His acquaintances resented the fact that he turned up in popular cafés with her and, leaving her at a table, sauntered about, chatting with whomsoever he knew. Though I was curious to see her, I had no desire to meet her—but I did. I went up to New York with Tom on the train one afternoon, and when we stopped by the ash-heaps he jumped to his feet and, taking hold of my elbow, literally forced me from the car.</p>
+<p style="margin:0 0 12px;">“We’re getting off,” he insisted. “I want you to meet my girl.”</p>
+<p style="margin:0 0 12px;">I think he’d tanked up a good deal at luncheon, and his determination to have my company bordered on violence. The supercilious assumption was that on Sunday afternoon I had nothing better to do.</p>
+<p style="margin:0 0 12px;">I followed him over a low whitewashed railroad fence, and we walked back a hundred yards along the road under Doctor Eckleburg’s persistent stare. The only building in sight was a small block of yellow brick sitting on the edge of the waste land, a sort of compact Main Street ministering to it, and contiguous to absolutely nothing. One of the three shops it contained was for rent and another was an all-night restaurant, approached by a trail of ashes; the third was a garage—Repairs. George B. Wilson. Cars bought and sold.—and I followed Tom inside.</p>
+<p style="margin:0 0 12px;">The interior was unprosperous and bare; the only car visible was the dust-covered wreck of a Ford which crouched in a dim corner. It had occurred to me that this shadow of a garage must be a blind, and that sumptuous and romantic apartments were concealed overhead, when the proprietor himself appeared in the door of an office, wiping his hands on a piece of waste. He was a blond, spiritless man, anaemic, and faintly handsome. When he saw us a damp gleam of hope sprang into his light blue eyes.</p>
+<p style="margin:0 0 12px;">“Hello, Wilson, old man,” said Tom, slapping him jovially on the shoulder. “How’s business?”</p>
+<p style="margin:0 0 12px;">“I can’t complain,” answered Wilson unconvincingly. “When are you going to sell me that car?”</p>
+<p style="margin:0 0 12px;">“Next week; I’ve got my man working on it now.”</p>
+<p style="margin:0 0 12px;">“Works pretty slow, don’t he?”</p>
+<p style="margin:0 0 12px;">“No, he doesn’t,” said Tom coldly. “And if you feel that way about it, maybe I’d better sell it somewhere else after all.”</p>
+<p style="margin:0 0 12px;">“I don’t mean that,” explained Wilson quickly. “I just meant—”</p>
+<p style="margin:0 0 12px;">His voice faded off and Tom glanced impatiently around the garage. Then I heard footsteps on a stairs, and in a moment the thickish figure of a woman blocked out the light from the office door. She was in the middle thirties, and faintly stout, but she carried her flesh sensuously as some women can. Her face, above a spotted dress of dark blue crêpe-de-chine, contained no facet or gleam of beauty, but there was an immediately perceptible vitality about her as if the nerves of her body were continually smouldering. She smiled slowly and, walking through her husband as if he were a ghost, shook hands with Tom, looking him flush in the eye. Then she wet her lips, and without turning around spoke to her husband in a soft, coarse voice:</p>
+<p style="margin:0 0 12px;">“Get some chairs, why don’t you, so somebody can sit down.”</p>
+<p style="margin:0 0 12px;">“Oh, sure,” agreed Wilson hurriedly, and went toward the little office, mingling immediately with the cement colour of the walls. A white ashen dust veiled his dark suit and his pale hair as it veiled everything in the vicinity—except his wife, who moved close to Tom.</p>
+<p style="margin:0 0 12px;">“I want to see you,” said Tom intently. “Get on the next train.”</p>
+<p style="margin:0 0 12px;">“All right.”</p>
+<p style="margin:0 0 12px;">“I’ll meet you by the newsstand on the lower level.”</p>
+<p style="margin:0 0 12px;">She nodded and moved away from him just as George Wilson emerged with two chairs from his office door.</p>
+<p style="margin:0 0 12px;">We waited for her down the road and out of sight. It was a few days before the Fourth of July, and a grey, scrawny Italian child was setting torpedoes in a row along the railroad track.</p>
+<p style="margin:0 0 12px;">“Terrible place, isn’t it,” said Tom, exchanging a frown with Doctor Eckleburg.</p>
+<p style="margin:0 0 12px;">“Awful.”</p>
+<p style="margin:0 0 12px;">“It does her good to get away.”</p>
+<p style="margin:0 0 12px;">“Doesn’t her husband object?”</p>
+<p style="margin:0 0 12px;">“Wilson? He thinks she goes to see her sister in New York. He’s so dumb he doesn’t know he’s alive.”</p>
+<p style="margin:0 0 12px;">So Tom Buchanan and his girl and I went up together to New York—or not quite together, for Mrs. Wilson sat discreetly in another car. Tom deferred that much to the sensibilities of those East Eggers who might be on the train.</p>
+<p style="margin:0 0 12px;">She had changed her dress to a brown figured muslin, which stretched tight over her rather wide hips as Tom helped her to the platform in New York. At the newsstand she bought a copy of Town Tattle and a moving-picture magazine, and in the station drugstore some cold cream and a small flask of perfume. Upstairs, in the solemn echoing drive she let four taxicabs drive away before she selected a new one, lavender-coloured with grey upholstery, and in this we slid out from the mass of the station into the glowing sunshine. But immediately she turned sharply from the window and, leaning forward, tapped on the front glass.</p>
+<p style="margin:0 0 12px;">“I want to get one of those dogs,” she said earnestly. “I want to get one for the apartment. They’re nice to have—a dog.”</p>
+<p style="margin:0 0 12px;">We backed up to a grey old man who bore an absurd resemblance to John D. Rockefeller. In a basket swung from his neck cowered a dozen very recent puppies of an indeterminate breed.</p>
+<p style="margin:0 0 12px;">“What kind are they?” asked Mrs. Wilson eagerly, as he came to the taxi-window.</p>
+<p style="margin:0 0 12px;">“All kinds. What kind do you want, lady?”</p>
+<p style="margin:0 0 12px;">“I’d like to get one of those police dogs; I don’t suppose you got that kind?”</p>
+<p style="margin:0 0 12px;">The man peered doubtfully into the basket, plunged in his hand and drew one up, wriggling, by the back of the neck.</p>
+<p style="margin:0 0 12px;">“That’s no police dog,” said Tom.</p>
+<p style="margin:0 0 12px;">“No, it’s not exactly a police dog,” said the man with disappointment in his voice. “It’s more of an Airedale.” He passed his hand over the brown washrag of a back. “Look at that coat. Some coat. That’s a dog that’ll never bother you with catching cold.”</p>
+<p style="margin:0 0 12px;">“I think it’s cute,” said Mrs. Wilson enthusiastically. “How much is it?”</p>
+<p style="margin:0 0 12px;">“That dog?” He looked at it admiringly. “That dog will cost you ten dollars.”</p>
+<p style="margin:0 0 12px;">The Airedale—undoubtedly there was an Airedale concerned in it somewhere, though its feet were startlingly white—changed hands and settled down into Mrs. Wilson’s lap, where she fondled the weatherproof coat with rapture.</p>
+<p style="margin:0 0 12px;">“Is it a boy or a girl?” she asked delicately.</p>
+<p style="margin:0 0 12px;">“That dog? That dog’s a boy.”</p>
+<p style="margin:0 0 12px;">“It’s a bitch,” said Tom decisively. “Here’s your money. Go and buy ten more dogs with it.”</p>
+<p style="margin:0 0 12px;">We drove over to Fifth Avenue, warm and soft, almost pastoral, on the summer Sunday afternoon. I wouldn’t have been surprised to see a great flock of white sheep turn the corner.</p>
+<p style="margin:0 0 12px;">“Hold on,” I said, “I have to leave you here.”</p>
+<p style="margin:0 0 12px;">“No you don’t,” interposed Tom quickly. “Myrtle’ll be hurt if you don’t come up to the apartment. Won’t you, Myrtle?”</p>
+<p style="margin:0 0 12px;">“Come on,” she urged. “I’ll telephone my sister Catherine. She’s said to be very beautiful by people who ought to know.”</p>
+<p style="margin:0 0 12px;">“Well, I’d like to, but—”</p>
+<p style="margin:0 0 12px;">We went on, cutting back again over the Park toward the West Hundreds. At 158th Street the cab stopped at one slice in a long white cake of apartment-houses. Throwing a regal homecoming glance around the neighbourhood, Mrs. Wilson gathered up her dog and her other purchases, and went haughtily in.</p>
+<p style="margin:0 0 12px;">“I’m going to have the McKees come up,” she announced as we rose in the elevator. “And, of course, I got to call up my sister, too.”</p>
+<p style="margin:0 0 12px;">The apartment was on the top floor—a small living-room, a small dining-room, a small bedroom, and a bath. The living-room was crowded to the doors with a set of tapestried furniture entirely too large for it, so that to move about was to stumble continually over scenes of ladies swinging in the gardens of Versailles. The only picture was an over-enlarged photograph, apparently a hen sitting on a blurred rock. Looked at from a distance, however, the hen resolved itself into a bonnet, and the countenance of a stout old lady beamed down into the room. Several old copies of Town Tattle lay on the table together with a copy of Simon Called Peter, and some of the small scandal magazines of Broadway. Mrs. Wilson was first concerned with the dog. A reluctant elevator boy went for a box full of straw and some milk, to which he added on his own initiative a tin of large, hard dog biscuits—one of which decomposed apathetically in the saucer of milk all afternoon. Meanwhile Tom brought out a bottle of whisky from a locked bureau door.</p>
+<p style="margin:0 0 12px;">I have been drunk just twice in my life, and the second time was that afternoon; so everything that happened has a dim, hazy cast over it, although until after eight o’clock the apartment was full of cheerful sun. Sitting on Tom’s lap Mrs. Wilson called up several people on the telephone; then there were no cigarettes, and I went out to buy some at the drugstore on the corner. When I came back they had both disappeared, so I sat down discreetly in the living-room and read a chapter of Simon Called Peter—either it was terrible stuff or the whisky distorted things, because it didn’t make any sense to me.</p>
+<p style="margin:0 0 12px;">Just as Tom and Myrtle (after the first drink Mrs. Wilson and I called each other by our first names) reappeared, company commenced to arrive at the apartment door.</p>
+<p style="margin:0 0 12px;">The sister, Catherine, was a slender, worldly girl of about thirty, with a solid, sticky bob of red hair, and a complexion powdered milky white. Her eyebrows had been plucked and then drawn on again at a more rakish angle, but the efforts of nature toward the restoration of the old alignment gave a blurred air to her face. When she moved about there was an incessant clicking as innumerable pottery bracelets jingled up and down upon her arms. She came in with such a proprietary haste, and looked around so possessively at the furniture that I wondered if she lived here. But when I asked her she laughed immoderately, repeated my question aloud, and told me she lived with a girl friend at a hotel.</p>
+<p style="margin:0 0 12px;">Mr. McKee was a pale, feminine man from the flat below. He had just shaved, for there was a white spot of lather on his cheekbone, and he was most respectful in his greeting to everyone in the room. He informed me that he was in the “artistic game,” and I gathered later that he was a photographer and had made the dim enlargement of Mrs. Wilson’s mother which hovered like an ectoplasm on the wall. His wife was shrill, languid, handsome, and horrible. She told me with pride that her husband had photographed her a hundred and twenty-seven times since they had been married.</p>
+<p style="margin:0 0 12px;">Mrs. Wilson had changed her costume some time before, and was now attired in an elaborate afternoon dress of cream-coloured chiffon, which gave out a continual rustle as she swept about the room. With the influence of the dress her personality had also undergone a change. The intense vitality that had been so remarkable in the garage was converted into impressive hauteur. Her laughter, her gestures, her assertions became more violently affected moment by moment, and as she expanded the room grew smaller around her, until she seemed to be revolving on a noisy, creaking pivot through the smoky air.</p>
+<p style="margin:0 0 12px;">“My dear,” she told her sister in a high, mincing shout, “most of these fellas will cheat you every time. All they think of is money. I had a woman up here last week to look at my feet, and when she gave me the bill you’d of thought she had my appendicitis out.”</p>
+<p style="margin:0 0 12px;">“What was the name of the woman?” asked Mrs. McKee.</p>
+<p style="margin:0 0 12px;">“Mrs. Eberhardt. She goes around looking at people’s feet in their own homes.”</p>
+<p style="margin:0 0 12px;">“I like your dress,” remarked Mrs. McKee, “I think it’s adorable.”</p>
+<p style="margin:0 0 12px;">Mrs. Wilson rejected the compliment by raising her eyebrow in disdain.</p>
+<p style="margin:0 0 12px;">“It’s just a crazy old thing,” she said. “I just slip it on sometimes when I don’t care what I look like.”</p>
+<p style="margin:0 0 12px;">“But it looks wonderful on you, if you know what I mean,” pursued Mrs. McKee. “If Chester could only get you in that pose I think he could make something of it.”</p>
+<p style="margin:0 0 12px;">We all looked in silence at Mrs. Wilson, who removed a strand of hair from over her eyes and looked back at us with a brilliant smile. Mr. McKee regarded her intently with his head on one side, and then moved his hand back and forth slowly in front of his face.</p>
+<p style="margin:0 0 12px;">“I should change the light,” he said after a moment. “I’d like to bring out the modelling of the features. And I’d try to get hold of all the back hair.”</p>
+<p style="margin:0 0 12px;">“I wouldn’t think of changing the light,” cried Mrs. McKee. “I think it’s—”</p>
+<p style="margin:0 0 12px;">Her husband said “Sh!” and we all looked at the subject again, whereupon Tom Buchanan yawned audibly and got to his feet.</p>
+<p style="margin:0 0 12px;">“You McKees have something to drink,” he said. “Get some more ice and mineral water, Myrtle, before everybody goes to sleep.”</p>
+<p style="margin:0 0 12px;">“I told that boy about the ice.” Myrtle raised her eyebrows in despair at the shiftlessness of the lower orders. “These people! You have to keep after them all the time.”</p>
+<p style="margin:0 0 12px;">She looked at me and laughed pointlessly. Then she flounced over to the dog, kissed it with ecstasy, and swept into the kitchen, implying that a dozen chefs awaited her orders there.</p>
+<p style="margin:0 0 12px;">“I’ve done some nice things out on Long Island,” asserted Mr. McKee.</p>
+<p style="margin:0 0 12px;">Tom looked at him blankly.</p>
+<p style="margin:0 0 12px;">“Two of them we have framed downstairs.”</p>
+<p style="margin:0 0 12px;">“Two what?” demanded Tom.</p>
+<p style="margin:0 0 12px;">“Two studies. One of them I call Montauk Point—The Gulls, and the other I call Montauk Point—The Sea.”</p>
+<p style="margin:0 0 12px;">The sister Catherine sat down beside me on the couch.</p>
+<p style="margin:0 0 12px;">“Do you live down on Long Island, too?” she inquired.</p>
+<p style="margin:0 0 12px;">“I live at West Egg.”</p>
+<p style="margin:0 0 12px;">“Really? I was down there at a party about a month ago. At a man named Gatsby’s. Do you know him?”</p>
+<p style="margin:0 0 12px;">“I live next door to him.”</p>
+<p style="margin:0 0 12px;">“Well, they say he’s a nephew or a cousin of Kaiser Wilhelm’s. That’s where all his money comes from.”</p>
+<p style="margin:0 0 12px;">“Really?”</p>
+<p style="margin:0 0 12px;">She nodded.</p>
+<p style="margin:0 0 12px;">“I’m scared of him. I’d hate to have him get anything on me.”</p>
+<p style="margin:0 0 12px;">This absorbing information about my neighbour was interrupted by Mrs. McKee’s pointing suddenly at Catherine:</p>
+<p style="margin:0 0 12px;">“Chester, I think you could do something with her,” she broke out, but Mr. McKee only nodded in a bored way, and turned his attention to Tom.</p>
+<p style="margin:0 0 12px;">“I’d like to do more work on Long Island, if I could get the entry. All I ask is that they should give me a start.”</p>
+<p style="margin:0 0 12px;">“Ask Myrtle,” said Tom, breaking into a short shout of laughter as Mrs. Wilson entered with a tray. “She’ll give you a letter of introduction, won’t you, Myrtle?”</p>
+<p style="margin:0 0 12px;">“Do what?” she asked, startled.</p>
+<p style="margin:0 0 12px;">“You’ll give McKee a letter of introduction to your husband, so he can do some studies of him.” His lips moved silently for a moment as he invented, “ ‘George B. Wilson at the Gasoline Pump,’ or something like that.”</p>
+<p style="margin:0 0 12px;">Catherine leaned close to me and whispered in my ear:</p>
+<p style="margin:0 0 12px;">“Neither of them can stand the person they’re married to.”</p>
+<p style="margin:0 0 12px;">“Can’t they?”</p>
+<p style="margin:0 0 12px;">“Can’t stand them.” She looked at Myrtle and then at Tom. “What I say is, why go on living with them if they can’t stand them? If I was them I’d get a divorce and get married to each other right away.”</p>
+<p style="margin:0 0 12px;">“Doesn’t she like Wilson either?”</p>
+<p style="margin:0 0 12px;">The answer to this was unexpected. It came from Myrtle, who had overheard the question, and it was violent and obscene.</p>
+<p style="margin:0 0 12px;">“You see,” cried Catherine triumphantly. She lowered her voice again. “It’s really his wife that’s keeping them apart. She’s a Catholic, and they don’t believe in divorce.”</p>
+<p style="margin:0 0 12px;">Daisy was not a Catholic, and I was a little shocked at the elaborateness of the lie.</p>
+<p style="margin:0 0 12px;">“When they do get married,” continued Catherine, “they’re going West to live for a while until it blows over.”</p>
+<p style="margin:0 0 12px;">“It’d be more discreet to go to Europe.”</p>
+<p style="margin:0 0 12px;">“Oh, do you like Europe?” she exclaimed surprisingly. “I just got back from Monte Carlo.”</p>
+<p style="margin:0 0 12px;">“Really.”</p>
+<p style="margin:0 0 12px;">“Just last year. I went over there with another girl.”</p>
+<p style="margin:0 0 12px;">“Stay long?”</p>
+<p style="margin:0 0 12px;">“No, we just went to Monte Carlo and back. We went by way of Marseilles. We had over twelve hundred dollars when we started, but we got gyped out of it all in two days in the private rooms. We had an awful time getting back, I can tell you. God, how I hated that town!”</p>
+<p style="margin:0 0 12px;">The late afternoon sky bloomed in the window for a moment like the blue honey of the Mediterranean—then the shrill voice of Mrs. McKee called me back into the room.</p>
+<p style="margin:0 0 12px;">“I almost made a mistake, too,” she declared vigorously. “I almost married a little kike who’d been after me for years. I knew he was below me. Everybody kept saying to me: ‘Lucille, that man’s way below you!’ But if I hadn’t met Chester, he’d of got me sure.”</p>
+<p style="margin:0 0 12px;">“Yes, but listen,” said Myrtle Wilson, nodding her head up and down, “at least you didn’t marry him.”</p>
+<p style="margin:0 0 12px;">“I know I didn’t.”</p>
+<p style="margin:0 0 12px;">“Well, I married him,” said Myrtle, ambiguously. “And that’s the difference between your case and mine.”</p>
+<p style="margin:0 0 12px;">“Why did you, Myrtle?” demanded Catherine. “Nobody forced you to.”</p>
+<p style="margin:0 0 12px;">Myrtle considered.</p>
+<p style="margin:0 0 12px;">“I married him because I thought he was a gentleman,” she said finally. “I thought he knew something about breeding, but he wasn’t fit to lick my shoe.”</p>
+<p style="margin:0 0 12px;">“You were crazy about him for a while,” said Catherine.</p>
+<p style="margin:0 0 12px;">“Crazy about him!” cried Myrtle incredulously. “Who said I was crazy about him? I never was any more crazy about him than I was about that man there.”</p>
+<p style="margin:0 0 12px;">She pointed suddenly at me, and everyone looked at me accusingly. I tried to show by my expression that I expected no affection.</p>
+<p style="margin:0 0 12px;">“The only crazy I was was when I married him. I knew right away I made a mistake. He borrowed somebody’s best suit to get married in, and never even told me about it, and the man came after it one day when he was out: ‘Oh, is that your suit?’ I said. ‘This is the first I ever heard about it.’ But I gave it to him and then I lay down and cried to beat the band all afternoon.”</p>
+<p style="margin:0 0 12px;">“She really ought to get away from him,” resumed Catherine to me. “They’ve been living over that garage for eleven years. And Tom’s the first sweetie she ever had.”</p>
+<p style="margin:0 0 12px;">The bottle of whisky—a second one—was now in constant demand by all present, excepting Catherine, who “felt just as good on nothing at all.” Tom rang for the janitor and sent him for some celebrated sandwiches, which were a complete supper in themselves. I wanted to get out and walk eastward toward the park through the soft twilight, but each time I tried to go I became entangled in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.</p>
+<p style="margin:0 0 12px;">Myrtle pulled her chair close to mine, and suddenly her warm breath poured over me the story of her first meeting with Tom.</p>
+<p style="margin:0 0 12px;">“It was on the two little seats facing each other that are always the last ones left on the train. I was going up to New York to see my sister and spend the night. He had on a dress suit and patent leather shoes, and I couldn’t keep my eyes off him, but every time he looked at me I had to pretend to be looking at the advertisement over his head. When we came into the station he was next to me, and his white shirtfront pressed against my arm, and so I told him I’d have to call a policeman, but he knew I lied. I was so excited that when I got into a taxi with him I didn’t hardly know I wasn’t getting into a subway train. All I kept thinking about, over and over, was ‘You can’t live forever; you can’t live forever.’ ”</p>
+<p style="margin:0 0 12px;">She turned to Mrs. McKee and the room rang full of her artificial laughter.</p>
+<p style="margin:0 0 12px;">“My dear,” she cried, “I’m going to give you this dress as soon as I’m through with it. I’ve got to get another one tomorrow. I’m going to make a list of all the things I’ve got to get. A massage and a wave, and a collar for the dog, and one of those cute little ashtrays where you touch a spring, and a wreath with a black silk bow for mother’s grave that’ll last all summer. I got to write down a list so I won’t forget all the things I got to do.”</p>
+<p style="margin:0 0 12px;">It was nine o’clock—almost immediately afterward I looked at my watch and found it was ten. Mr. McKee was asleep on a chair with his fists clenched in his lap, like a photograph of a man of action. Taking out my handkerchief I wiped from his cheek the spot of dried lather that had worried me all the afternoon.</p>
+<p style="margin:0 0 12px;">The little dog was sitting on the table looking with blind eyes through the smoke, and from time to time groaning faintly. People disappeared, reappeared, made plans to go somewhere, and then lost each other, searched for each other, found each other a few feet away. Some time toward midnight Tom Buchanan and Mrs. Wilson stood face to face discussing, in impassioned voices, whether Mrs. Wilson had any right to mention Daisy’s name.</p>
+<p style="margin:0 0 12px;">“Daisy! Daisy! Daisy!” shouted Mrs. Wilson. “I’ll say it whenever I want to! Daisy! Dai—”</p>
+<p style="margin:0 0 12px;">Making a short deft movement, Tom Buchanan broke her nose with his open hand.</p>
+<p style="margin:0 0 12px;">Then there were bloody towels upon the bathroom floor, and women’s voices scolding, and high over the confusion a long broken wail of pain. Mr. McKee awoke from his doze and started in a daze toward the door. When he had gone halfway he turned around and stared at the scene—his wife and Catherine scolding and consoling as they stumbled here and there among the crowded furniture with articles of aid, and the despairing figure on the couch, bleeding fluently, and trying to spread a copy of Town Tattle over the tapestry scenes of Versailles. Then Mr. McKee turned and continued on out the door. Taking my hat from the chandelier, I followed.</p>
+<p style="margin:0 0 12px;">“Come to lunch some day,” he suggested, as we groaned down in the elevator.</p>
+<p style="margin:0 0 12px;">“Where?”</p>
+<p style="margin:0 0 12px;">“Anywhere.”</p>
+<p style="margin:0 0 12px;">“Keep your hands off the lever,” snapped the elevator boy.</p>
+<p style="margin:0 0 12px;">“I beg your pardon,” said Mr. McKee with dignity, “I didn’t know I was touching it.”</p>
+<p style="margin:0 0 12px;">“All right,” I agreed, “I’ll be glad to.”</p>
+<p style="margin:0 0 12px;">… I was standing beside his bed and he was sitting up between the sheets, clad in his underwear, with a great portfolio in his hands.</p>
+<p style="margin:0 0 12px;">“Beauty and the Beast … Loneliness … Old Grocery Horse … Brook’n Bridge …”</p>
+<p style="margin:0 0 12px;">Then I was lying half asleep in the cold lower level of the Pennsylvania Station, staring at the morning Tribune, and waiting for the four o’clock train.</p><p style="font-size:12px;color:#3B4E8C;margin-top:14px;">F. Scott Fitzgerald, <em>The Great Gatsby</em> (1925; public domain; Project Gutenberg eBook #64317)</p></div></details></div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE PLACE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The chapter opens on a stretch of road and a description that turns ash into landscape:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">This is a valley of ashes—a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens; where ashes take the forms of houses and chimneys and rising smoke and, finally, with a transcendent effort, of ash-grey men, who move dimly and already crumbling through the powdery air.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The language of farming and gardening is turned against itself: what grows here is waste. The ash-grey men are the people who work and live there, and the passage describes them as the product of the place, already crumbling.</p>
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">What does a story usually do when an object appears again and again?</div>
+            <div class="widget-options">
+                <button data-response="A repeated object collects associations. Each new scene adds a layer, so the first appearance matters less than the pattern.">It builds a meaning that grows with each appearance</button>
+                <button data-response="Sometimes. In this novel the repeated images work more like a mood that deepens than like clues that are solved.">It marks the object as a clue in a puzzle</button>
+                <button data-response="Repetition can look like filler, but a writer who repeats a detail usually wants a connection between the scenes where it returns.">It fills space between plot events</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; SETTING AND SYMBOL</div>
+        <div style="background: #FFFDF7; border: 1px solid #E7D6AE; border-radius: 8px; padding: 20px 22px; margin: 6px 0 16px 0;">
+            <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px; letter-spacing: 0.4px;">&#128221; ONE ROAD, THREE WORLDS</div>
+            <div style="display:flex; flex-wrap:wrap; gap:0; align-items:stretch;">
+                <div style="flex:1; min-width:200px; background:#EEF1F8; border:2px solid #3B4E8C; padding:14px 16px;">
+                    <div style="font-size:13px; color:#3B4E8C; letter-spacing:0.3px; margin-bottom:6px;">WEST EGG</div>
+                    <div style="font-size:15px; color:#1a2340; line-height:1.5;">Lawns, mansions, and a party house. Money is spent here.</div>
+                </div>
+                <div style="flex:1; min-width:200px; background:#0E1C42; border:2px solid #0E1C42; padding:14px 16px;">
+                    <div style="font-size:13px; color:#55c8e8; letter-spacing:0.3px; margin-bottom:6px;">THE VALLEY OF ASHES</div>
+                    <div style="font-size:15px; color:#ffffff; line-height:1.5;">About halfway between. Ash-heaps, the railroad, Wilson&rsquo;s garage, and the billboard eyes. The road and the railroad pass through it. The waste of the other two worlds is dumped here.</div>
+                </div>
+                <div style="flex:1; min-width:200px; background:#FDF3E3; border:2px solid #C7922C; padding:14px 16px;">
+                    <div style="font-size:13px; color:#C7922C; letter-spacing:0.3px; margin-bottom:6px;">NEW YORK</div>
+                    <div style="font-size:15px; color:#1a2340; line-height:1.5;">Myrtle&rsquo;s apartment, hotels, and restaurants. Pleasure is hired here.</div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><strong>Setting</strong> is where and when a story happens. Here it is also a statement about who pays for the rest of the novel&rsquo;s comfort. Every character who travels between the Eggs and the city passes through the valley, and most do not look. Tom&rsquo;s comment is typical:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">“Terrible place, isn’t it,” said Tom, exchanging a frown with Doctor Eckleburg.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><strong>Symbol</strong> is a concrete object that stands for an idea and gathers meaning across the story. The novel&rsquo;s first sustained symbol hangs above the ash:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">But above the grey land and the spasms of bleak dust which drift endlessly over it, you perceive, after a moment, the eyes of Doctor T. J. Eckleburg. The eyes of Doctor T. J. Eckleburg are blue and gigantic—their retinas are one yard high. They look out of no face, but, instead, from a pair of enormous yellow spectacles which pass over a nonexistent nose.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">But his eyes, dimmed a little by many paintless days, under sun and rain, brood on over the solemn dumping ground.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 0 0;">The facts are plain: an oculist&rsquo;s advertisement, faded and unattended. The text says the eyes &ldquo;<span class="pd-quote" data-src="gatsby">brood on</span>&rdquo;, and the verb belongs to the viewer, since a sign cannot brood. Anyone who finds the eyes watchful is supplying the watching. The image invites a reading without supplying it, and the careful reader keeps the fact and the reading apart.</p>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; WILSON AND MYRTLE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The ash settles on the people. Of George Wilson, Nick notes:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">A white ashen dust veiled his dark suit and his pale hair as it veiled everything in the vicinity—except his wife, who moved close to Tom.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Myrtle Wilson is the exception, and the chapter shows how she escapes the grey. Her apartment in the city is crowded with furniture too large for the room:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">The living-room was crowded to the doors with a set of tapestried furniture entirely too large for it, so that to move about was to stumble continually over scenes of ladies swinging in the gardens of Versailles.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Furniture meant for a palace, jammed into a small room, is a picture of aspiration that does not fit its space. The same theme shows up when Myrtle changes her dress:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">With the influence of the dress her personality had also undergone a change. The intense vitality that had been so remarkable in the garage was converted into impressive hauteur.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In the garage she is vital. In the apartment, in borrowed finery, she becomes haughty and affected. The chapter does not mock her wish to rise. It shows what the wish costs her and who profits from it: Tom, who pays for the apartment and is free to leave it. The scene closes with a reminder of that power:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">Making a short deft movement, Tom Buchanan broke her nose with his open hand.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Nick leaves without helping. Earlier in the afternoon he described his own position:</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: 0 0 12px 0;">Fitzgerald, The Great Gatsby, Chapter 2 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The phrase is a fair description of the narrator: close enough to see everything, and apart enough to do nothing.</p>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; READING THE IMAGE</div>
+            <div class="widget-question">Choose the best reading for each detail.</div>
+
+            <div class="widget-row" data-correct="1" data-fb="Right. The text calls the eyes a leftover advertisement and gives them a human verb. The meaning is supplied by those who look, which is what makes the image a symbol and not a fact about the place." data-hint="Separate what the text states (an oculist&rsquo;s sign, dimmed by weather) from what a viewer might add. Which option keeps both?">
+                <div class="widget-row-prompt">1. The eyes of Doctor T. J. Eckleburg &ldquo;<span class="pd-quote" data-src="gatsby">brood on over the solemn dumping ground</span>&rdquo;. Which reading does the text best support?</div>
+                <div class="widget-options">
+                    <button data-choice="0">The eyes are a literal supernatural watcher that punishes the characters below.</button>
+                    <button data-choice="1">The eyes are a faded sign, and any judgment comes from the viewers.</button>
+                    <button data-choice="2">The eyes show that Fitzgerald wanted the novel to be a religious allegory.</button>
+                    <button data-choice="3">The eyes are decoration with no connection to the characters or the place.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-fb="Correct. The text says the dress changes her personality. The change shows aspiration performing itself, and the apartment, with its oversized furniture, shows how poorly the performance fits." data-hint="Look at both the dress and the apartment. What are they doing for Myrtle, and what do they not change about her situation?">
+                <div class="widget-row-prompt">2. Myrtle&rsquo;s vitality turns into &ldquo;<span class="pd-quote" data-src="gatsby">impressive hauteur</span>&rdquo; when she changes her dress. What does the change suggest?</div>
+                <div class="widget-options">
+                    <button data-choice="0">That Myrtle has a split personality that appears when she changes clothes.</button>
+                    <button data-choice="1">That Tom has insisted she dress this way, and she resents it.</button>
+                    <button data-choice="2">That finery lets her act out a higher class, at a real cost.</button>
+                    <button data-choice="3">That Nick is exaggerating because he has had too much to drink.</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #3B4E8C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 14px;">&#128273; KEY TERMS</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;"><strong>Setting:</strong> where and when a story happens, which can also state a social fact.</div><div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;"><strong>Symbol:</strong> a concrete object that stands for an idea and gathers meaning as it recurs.</div><div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;"><strong>Aspiration:</strong> a strong wish to rise to a higher position.</div>
+    </div>
+
+</div>
+<!-- ===== /BODY WRAPPER ===== -->
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Week 2 &middot; The Valley of Ashes</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

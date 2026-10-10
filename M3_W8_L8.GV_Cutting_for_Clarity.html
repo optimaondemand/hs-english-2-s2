@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.C.3.1; ELA.K12.EE.6.1; ELA.10.V.1.1; ELA.10.V.1.2; ELA.10.V.1.3" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(9)(C); TEKS 110.37(c)(9)(D); TEKS 110.37(c)(2)(C)" />
+<title>English 2 &middot; Cutting for Clarity</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 16px; }
+    .ws-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 14px 18px; margin-bottom: 10px; }
+    /* ===== WIDGET CSS (recolored to the ELA gold/indigo palette; no green/teal) ===== */
+    .optima-widget { background: linear-gradient(135deg, #EEF1F8 0%, #F4F6FA 100%); border: 1px solid #C7D0E5; border-left: 5px solid #3B4E8C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #3B4E8C; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #3B4E8C; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #FDF3E3; border-color: #C7922C; color: #7A5A17; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #FDF3E3; border-left: 3px solid #C7922C; color: #7A5A17; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH 2</div>
+    <div style="font-size: 18px; color: #55c8e8;">Quarter 3 &middot; Module 3: A Midsummer Night&rsquo;s Dream, Law, Desire, and the Restored Order &middot; Week 8 &middot; Grammar + Word Study</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #1a2340;">A Midsummer Night&rsquo;s Dream: Law, Desire, and the Restored Order</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Week</div>
+        <div style="font-size: 17px; color: #0e1c42;">Week 8</div>
+        <div style="font-size: 12px; color: #1a2340;">Grammar + Word Study</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">A Midsummer Night&rsquo;s Dream</div>
+        <div style="font-size: 12px; color: #1a2340;">William Shakespeare (public domain)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Law, Desire, and Order</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;"><div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Week 8</div><div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Cutting for Clarity</div><div style="font-size: 16px; color: #1a2340;">Grammar + Word Study &middot; Week 8</div></div><div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128214; TODAY&rsquo;S FOCUS</div><div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A sentence is finished when nothing more can be cut without losing meaning.</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Wordiness hides the point. Three kinds of waste account for most of it: repeated meaning, a phrase where a word would do, and an opener that says nothing. Cutting is not shortening for its own sake; the evidence stays.</div></div><div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; OBJECTIVES</div><div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;"><div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> cut redundant words and phrases from a sentence without changing its meaning.</div></div><div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;"><div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> replace a wordy phrase with a single word.</div></div><div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0;"><div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> define and use this week’s Word Study words.</div></div></div><div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THREE KINDS OF WASTE</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Cutting works in three moves. First, remove repeated meaning (a list of three verbs that mean the same thing). Second, replace a phrase with a word (<em>in the event that</em> becomes <em>if</em>). Third, delete an opener that adds nothing (<em>it is important to note that</em>). A final test: read the sentence aloud, then cross out each word in turn. If nothing is lost, the word goes.</p><div style="background: #0E1C42; border-radius: 8px; padding: 20px 22px; margin: 10px 0 16px 0;"><div style="font-size: 11px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.4px;">&#9998; ON THE BOARD &middot; BEFORE AND AFTER</div><div style="margin-bottom: 16px;"><div style="font-size: 19px; color: #ffffff; line-height: 1.7;"><span class="pd-quote" data-src="mnd">I am to entreat you, request you, and desire you, to con them by tomorrow night</span></div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Redundancy: entreat, request, and desire carry one meaning. Quince asks three times for one thing.</div></div><div style="margin-bottom: 22px;"><div style="font-size: 19px; color: #FDF3E3; line-height: 1.7;">Learn your parts by tomorrow night.</div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Revised. One verb, one action. The meaning survives intact.</div></div><div style="margin-bottom: 16px;"><div style="font-size: 19px; color: #ffffff; line-height: 1.7;"><span class="pd-quote" data-src="mnd">All that I have to say, is to tell you that the lantern is the moon; I the man i’ the moon; this thorn-bush my thorn-bush; and this dog my dog.</span></div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Redundancy and throat-clearing: Moonshine announces what the audience can already see, and the court objects.</div></div><div style="margin-bottom: 22px;"><div style="font-size: 19px; color: #FDF3E3; line-height: 1.7;">I am the man in the moon, with my lantern, thorn-bush, and dog.</div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Revised. Thirteen words for thirty-one, with every prop still named.</div></div><div style="margin-bottom: 16px;"><div style="font-size: 19px; color: #ffffff; line-height: 1.7;">In the event that Theseus had chosen to enforce the law, Hermia would have been faced with the possibility of death.</div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Wordy phrases: in the event that, would have been faced with, the possibility of. Expository prose.</div></div><div style="margin-bottom: 22px;"><div style="font-size: 19px; color: #FDF3E3; line-height: 1.7;">Had Theseus enforced the law, Hermia could have died.</div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Revised. A phrase becomes a word each time.</div></div><div style="margin-bottom: 16px;"><div style="font-size: 19px; color: #ffffff; line-height: 1.7;">It is important to note that Titania’s speech describes disordered seasons.</div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">An empty opener. The reader needs the claim, not a warning that a claim follows.</div></div><div style="margin-bottom: 0px;"><div style="font-size: 19px; color: #FDF3E3; line-height: 1.7;">Titania’s speech describes disordered seasons.</div><div style="font-size: 14px; color: #B9C3DE; margin-top: 4px; line-height: 1.5;">Revised. The opener is deleted.</div></div></div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 0px 0;">Cutting never trades precision for speed. The Prologue in Act 5 is not wordy; he is tangled, and cutting words would not mend him. Fixing a tangled sentence takes rewriting, not trimming. Cut only what repeats or adds nothing.</p></div><div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PRACTICE &middot; CUT THE SENTENCE</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Cut each sentence. A model revision opens below each item.</p><details style="border: 1px solid #D0D9E8; border-left: 4px solid #3B4E8C; border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; background: #FFFFFF;"><summary style="cursor: pointer; font-size: 16px; color: #0e1c42;">Due to the fact that the lovers are unable to see clearly, the confusion in the wood continues on.</summary><div style="font-size: 16px; color: #1a2340; line-height: 1.6; margin-top: 8px;"><strong>Model:</strong> Because the lovers cannot see clearly, the confusion in the wood continues.</div></details><details style="border: 1px solid #D0D9E8; border-left: 4px solid #3B4E8C; border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; background: #FFFFFF;"><summary style="cursor: pointer; font-size: 16px; color: #0e1c42;">Helena is a character who is very persistent and who pursues Demetrius with great persistence.</summary><div style="font-size: 16px; color: #1a2340; line-height: 1.6; margin-top: 8px;"><strong>Model:</strong> Helena pursues Demetrius with great persistence.</div></details><details style="border: 1px solid #D0D9E8; border-left: 4px solid #3B4E8C; border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; background: #FFFFFF;"><summary style="cursor: pointer; font-size: 16px; color: #0e1c42;">It should be noted that Oberon’s blessing is a blessing of the house and of all who live in it.</summary><div style="font-size: 16px; color: #1a2340; line-height: 1.6; margin-top: 8px;"><strong>Model:</strong> Oberon’s blessing covers the house and everyone in it.</div></details><div class="optima-widget ow-select"><div class="widget-kicker">&#9889; SELF-CHECK</div><div class="widget-question">Choose the best cut in each case.</div><div class="widget-row" data-correct="3" data-fb="Right. The reason that ... is because says the same thing twice. The shortest version keeps cause and subject." data-hint="Look for the version with no repeated idea and the same subject, verb, and cause."><div class="widget-row-prompt">1. Which revision cuts “The reason that Titania is angry is because Oberon demands her boy” without losing meaning?</div><div class="widget-options"><button data-choice="0">Titania is angry because Oberon demands her boy, which is the reason</button><button data-choice="1">Titania, angry, has a boy whom Oberon demands from her</button><button data-choice="2">The reason Titania is angry is Oberon’s demand for her boy</button><button data-choice="3">Titania is angry that Oberon demands her boy</button></div></div><div class="widget-row" data-correct="0" data-fb="Correct. Every word carries meaning. The others add padding: a clause no one needs, an empty opener, or a noun phrase where a verb would do." data-hint="Test each sentence by crossing out words one at a time. Only one sentence loses meaning with every cut."><div class="widget-row-prompt">2. Which sentence is already concise and should be left alone?</div><div class="widget-options"><button data-choice="0">Oberon undoes the spell on Titania.</button><button data-choice="1">Oberon, who is the fairy king, goes ahead and undoes the spell that was placed on Titania.</button><button data-choice="2">It is the case that Oberon undoes Titania’s spell at the end.</button><button data-choice="3">Oberon makes the decision to proceed to undo the spell on Titania.</button></div></div><button class="widget-reset">Reset</button></div></div><div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WORD STUDY</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">These six words appear in this week’s review of the whole play. Learn the sense the play gives each word.</p><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>solemnity</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(noun): a formal, ceremonial occasion; a serious ritual observance</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">Root: Latin sollemnis, “established, ceremonial”. In the play: <span class="pd-quote" data-src="mnd">A fortnight hold we this solemnity In nightly revels and new jollity.</span></div></div><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>discretion</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(noun): good judgment; the ability to see what is wise to do or say</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">Root: Latin discretio, “separation, discernment”. In the play: <span class="pd-quote" data-src="mnd">True; and a goose for his discretion.</span></div></div><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>tedious</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(adjective): tiresome because of length or dullness</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">Root: Latin taediosus, from taedium (weariness). In the play: <span class="pd-quote" data-src="mnd">Merry and tragical? Tedious and brief?</span></div></div><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>valour</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(noun): great courage in the face of danger</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">Root: Latin valor, from valere (to be strong). In the play: <span class="pd-quote" data-src="mnd">This lion is a very fox for his valour.</span></div></div><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>premeditated</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(adjective): thought out and planned in advance</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">Root: Latin prae- (before) and meditari (to think over). In the play: <span class="pd-quote" data-src="mnd">great clerks have purposed To greet me with premeditated welcomes;</span></div></div><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>audacious</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(adjective): boldly daring, sometimes to the point of rudeness</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">Root: Latin audax, from audere (to dare). In the play: <span class="pd-quote" data-src="mnd">Of saucy and audacious eloquence.</span></div></div></div><div style="background: #FFFFFF; border-top: 3px solid #3B4E8C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #3B4E8C; margin-bottom: 14px;">&#127760; LOANWORD SPOTLIGHT &middot; BORROWED FROM LATIN</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;">Short Latin phrases survive in English because they compress a longer idea into a few syllables.</p><div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>vice versa</strong> <span style="font-size: 14px; color: #1a2340; font-weight: normal;">(from Latin, “the position being reversed”): the other way around; with the order changed</span></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">The phrase compresses a whole clause into two words. Example: “The court laughs at the players, and, vice versa, the players watch the court with dread.”</div></div></div>
+
+</div>
+<!-- ===== /BODY WRAPPER ===== -->
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH 2 &middot; Quarter 3 &middot; Grammar + Word Study</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Week 8 &middot; Cutting for Clarity</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

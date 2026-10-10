@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.R.1.1; ELA.10.R.1.2; ELA.K12.EE.1.1" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(6)(A); TEKS 110.37(c)(6)(D); TEKS 110.37(c)(4)(F)" />
+<title>English 2 &middot; The Law of Athens</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    /* ===== WIDGET CSS (recolored to the ELA gold/indigo palette; no green/teal) ===== */
+    .optima-widget { background: linear-gradient(135deg, #EEF1F8 0%, #F4F6FA 100%); border: 1px solid #C7D0E5; border-left: 5px solid #3B4E8C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #3B4E8C; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; text-align: left; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #3B4E8C; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #FDF3E3; border-color: #C7922C; color: #7A5A17; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #FDF3E3; border-left: 3px solid #C7922C; color: #7A5A17; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH 2</div>
+    <div style="font-size: 18px; color: #55c8e8;">Quarter 3 &middot; Module 3: A Midsummer Night&rsquo;s Dream, Law, Desire, and the Restored Order &middot; Week 1 &middot; Literature</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #1a2340;">A Midsummer Night&rsquo;s Dream</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Week</div>
+        <div style="font-size: 17px; color: #0e1c42;">Week 1</div>
+        <div style="font-size: 12px; color: #1a2340;">Literature</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">A Midsummer Night&rsquo;s Dream</div>
+        <div style="font-size: 12px; color: #1a2340;">William Shakespeare (public domain)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Law, Desire, and the Restored Order</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Week 1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Law of Athens</div>
+        <div style="font-size: 16px; color: #1a2340;">Literature &middot; Week 1</div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128214; TODAY&rsquo;S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Egeus invokes an ancient privilege. Theseus upholds it and says he cannot soften it. Hermia refuses.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">The opening scene sets four claims against one another: a father&rsquo;s right, a ruler&rsquo;s duty to the law, a daughter&rsquo;s consent, and a suitor&rsquo;s rival claim. The text supplies enough evidence to weigh each one.</div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">I can state Egeus&rsquo;s claim and the penalty the law sets.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">I can explain how Theseus applies the law and what he leaves unexamined.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">I can weigh the claims of Egeus, Hermia, and Theseus using evidence from the text.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; READING</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Read Act 1, Scene 1 again, from the entrance of Egeus to the exit of Theseus and Egeus. Full text: <a href="https://www.gutenberg.org/ebooks/1514" style="color:#3B4E8C;">Gutenberg eBook #1514</a>.</div>
+        </div>
+        <div class="embed-reading" data-src="mnd" data-part="1.1"><details class="embed-reading-panel" data-ra-skip style="border:1px solid #D0D9E8;border-left:5px solid #C7922C;border-radius:8px;margin:16px 0;background:#FFFFFF;"><summary style="cursor:pointer;padding:12px 16px;font-size:14px;color:#0E1C42;background:#FDF3E3;border-radius:6px;"><strong>&#128214; Read the full text: A Midsummer Night&rsquo;s Dream, Act 1, Scene 1</strong></summary><div style="padding:16px 20px;font-size:15px;line-height:1.65;color:#1a2340;max-height:560px;overflow-y:auto;"><p style="font-size:13px;color:#3B4E8C;letter-spacing:0.4px;margin:0 0 12px;"><strong>SCENE I. Athens. A room in the Palace of Theseus</strong></p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Theseus, Hippolyta, Philostrate and Attendants.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Now, fair Hippolyta, our nuptial hour<br>Draws on apace; four happy days bring in<br>Another moon; but oh, methinks, how slow<br>This old moon wanes! She lingers my desires,<br>Like to a step-dame or a dowager,<br>Long withering out a young man’s revenue.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>Four days will quickly steep themselves in night;<br>Four nights will quickly dream away the time;<br>And then the moon, like to a silver bow<br>New bent in heaven, shall behold the night<br>Of our solemnities.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Go, Philostrate,<br>Stir up the Athenian youth to merriments;<br>Awake the pert and nimble spirit of mirth;<br>Turn melancholy forth to funerals;<br>The pale companion is not for our pomp.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Philostrate.]</p>
+<p style="margin:0 0 10px;">Hippolyta, I woo’d thee with my sword,<br>And won thy love doing thee injuries;<br>But I will wed thee in another key,<br>With pomp, with triumph, and with revelling.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Egeus, Hermia, Lysander and Demetrius.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">EGEUS</strong><br>Happy be Theseus, our renownèd Duke!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Thanks, good Egeus. What’s the news with thee?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">EGEUS</strong><br>Full of vexation come I, with complaint<br>Against my child, my daughter Hermia.<br>Stand forth, Demetrius. My noble lord,<br>This man hath my consent to marry her.<br>Stand forth, Lysander. And, my gracious Duke,<br>This man hath bewitch’d the bosom of my child.<br>Thou, thou, Lysander, thou hast given her rhymes,<br>And interchang’d love-tokens with my child.<br>Thou hast by moonlight at her window sung,<br>With feigning voice, verses of feigning love;<br>And stol’n the impression of her fantasy<br>With bracelets of thy hair, rings, gauds, conceits,<br>Knacks, trifles, nosegays, sweetmeats (messengers<br>Of strong prevailment in unharden’d youth)<br>With cunning hast thou filch’d my daughter’s heart,<br>Turn’d her obedience (which is due to me)<br>To stubborn harshness. And, my gracious Duke,<br>Be it so she will not here before your grace<br>Consent to marry with Demetrius,<br>I beg the ancient privilege of Athens:<br>As she is mine I may dispose of her;<br>Which shall be either to this gentleman<br>Or to her death, according to our law<br>Immediately provided in that case.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>What say you, Hermia? Be advis’d, fair maid.<br>To you your father should be as a god;<br>One that compos’d your beauties, yea, and one<br>To whom you are but as a form in wax<br>By him imprinted, and within his power<br>To leave the figure, or disfigure it.<br>Demetrius is a worthy gentleman.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>So is Lysander.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>In himself he is.<br>But in this kind, wanting your father’s voice,<br>The other must be held the worthier.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>I would my father look’d but with my eyes.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Rather your eyes must with his judgment look.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>I do entreat your Grace to pardon me.<br>I know not by what power I am made bold,<br>Nor how it may concern my modesty<br>In such a presence here to plead my thoughts:<br>But I beseech your Grace that I may know<br>The worst that may befall me in this case,<br>If I refuse to wed Demetrius.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Either to die the death, or to abjure<br>For ever the society of men.<br>Therefore, fair Hermia, question your desires,<br>Know of your youth, examine well your blood,<br>Whether, if you yield not to your father’s choice,<br>You can endure the livery of a nun,<br>For aye to be in shady cloister mew’d,<br>To live a barren sister all your life,<br>Chanting faint hymns to the cold fruitless moon.<br>Thrice-blessèd they that master so their blood<br>To undergo such maiden pilgrimage,<br>But earthlier happy is the rose distill’d<br>Than that which, withering on the virgin thorn,<br>Grows, lives, and dies, in single blessedness.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>So will I grow, so live, so die, my lord,<br>Ere I will yield my virgin patent up<br>Unto his lordship, whose unwishèd yoke<br>My soul consents not to give sovereignty.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Take time to pause; and by the next new moon<br>The sealing-day betwixt my love and me<br>For everlasting bond of fellowship,<br>Upon that day either prepare to die<br>For disobedience to your father’s will,<br>Or else to wed Demetrius, as he would,<br>Or on Diana’s altar to protest<br>For aye austerity and single life.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Relent, sweet Hermia; and, Lysander, yield<br>Thy crazèd title to my certain right.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>You have her father’s love, Demetrius.<br>Let me have Hermia’s. Do you marry him.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">EGEUS</strong><br>Scornful Lysander, true, he hath my love;<br>And what is mine my love shall render him;<br>And she is mine, and all my right of her<br>I do estate unto Demetrius.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>I am, my lord, as well deriv’d as he,<br>As well possess’d; my love is more than his;<br>My fortunes every way as fairly rank’d,<br>If not with vantage, as Demetrius’;<br>And, which is more than all these boasts can be,<br>I am belov’d of beauteous Hermia.<br>Why should not I then prosecute my right?<br>Demetrius, I’ll avouch it to his head,<br>Made love to Nedar’s daughter, Helena,<br>And won her soul; and she, sweet lady, dotes,<br>Devoutly dotes, dotes in idolatry,<br>Upon this spotted and inconstant man.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>I must confess that I have heard so much,<br>And with Demetrius thought to have spoke thereof;<br>But, being over-full of self-affairs,<br>My mind did lose it.—But, Demetrius, come,<br>And come, Egeus; you shall go with me.<br>I have some private schooling for you both.—<br>For you, fair Hermia, look you arm yourself<br>To fit your fancies to your father’s will,<br>Or else the law of Athens yields you up<br>(Which by no means we may extenuate)<br>To death, or to a vow of single life.<br>Come, my Hippolyta. What cheer, my love?<br>Demetrius and Egeus, go along;<br>I must employ you in some business<br>Against our nuptial, and confer with you<br>Of something nearly that concerns yourselves.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">EGEUS</strong><br>With duty and desire we follow you.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exeunt all but Lysander and Hermia.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>How now, my love? Why is your cheek so pale?<br>How chance the roses there do fade so fast?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>Belike for want of rain, which I could well<br>Beteem them from the tempest of my eyes.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Ay me! For aught that I could ever read,<br>Could ever hear by tale or history,<br>The course of true love never did run smooth.<br>But either it was different in blood—</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>O cross! Too high to be enthrall’d to low.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Or else misgraffèd in respect of years—</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>O spite! Too old to be engag’d to young.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Or else it stood upon the choice of friends—</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>O hell! to choose love by another’s eyes!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Or, if there were a sympathy in choice,<br>War, death, or sickness did lay siege to it,<br>Making it momentany as a sound,<br>Swift as a shadow, short as any dream,<br>Brief as the lightning in the collied night<br>That, in a spleen, unfolds both heaven and earth,<br>And, ere a man hath power to say, ‘Behold!’<br>The jaws of darkness do devour it up:<br>So quick bright things come to confusion.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>If then true lovers have ever cross’d,<br>It stands as an edict in destiny.<br>Then let us teach our trial patience,<br>Because it is a customary cross,<br>As due to love as thoughts and dreams and sighs,<br>Wishes and tears, poor fancy’s followers.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>A good persuasion; therefore, hear me, Hermia.<br>I have a widow aunt, a dowager<br>Of great revenue, and she hath no child.<br>From Athens is her house remote seven leagues,<br>And she respects me as her only son.<br>There, gentle Hermia, may I marry thee,<br>And to that place the sharp Athenian law<br>Cannot pursue us. If thou lovest me then,<br>Steal forth thy father’s house tomorrow night;<br>And in the wood, a league without the town<br>(Where I did meet thee once with Helena<br>To do observance to a morn of May),<br>There will I stay for thee.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>My good Lysander!<br>I swear to thee by Cupid’s strongest bow,<br>By his best arrow with the golden head,<br>By the simplicity of Venus’ doves,<br>By that which knitteth souls and prospers loves,<br>And by that fire which burn’d the Carthage queen<br>When the false Trojan under sail was seen,<br>By all the vows that ever men have broke<br>(In number more than ever women spoke),<br>In that same place thou hast appointed me,<br>Tomorrow truly will I meet with thee.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Keep promise, love. Look, here comes Helena.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Helena.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>God speed fair Helena! Whither away?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>Call you me fair? That fair again unsay.<br>Demetrius loves your fair. O happy fair!<br>Your eyes are lode-stars and your tongue’s sweet air<br>More tuneable than lark to shepherd’s ear,<br>When wheat is green, when hawthorn buds appear.<br>Sickness is catching. O were favour so,<br>Yours would I catch, fair Hermia, ere I go.<br>My ear should catch your voice, my eye your eye,<br>My tongue should catch your tongue’s sweet melody.<br>Were the world mine, Demetrius being bated,<br>The rest I’d give to be to you translated.<br>O, teach me how you look, and with what art<br>You sway the motion of Demetrius’ heart!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>I frown upon him, yet he loves me still.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>O that your frowns would teach my smiles such skill!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>I give him curses, yet he gives me love.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>O that my prayers could such affection move!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>The more I hate, the more he follows me.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>The more I love, the more he hateth me.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>His folly, Helena, is no fault of mine.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>None but your beauty; would that fault were mine!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>Take comfort: he no more shall see my face;<br>Lysander and myself will fly this place.<br>Before the time I did Lysander see,<br>Seem’d Athens as a paradise to me.<br>O, then, what graces in my love do dwell,<br>That he hath turn’d a heaven into hell!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Helen, to you our minds we will unfold:<br>Tomorrow night, when Phoebe doth behold<br>Her silver visage in the watery glass,<br>Decking with liquid pearl the bladed grass<br>(A time that lovers’ flights doth still conceal),<br>Through Athens’ gates have we devis’d to steal.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HERMIA</strong><br>And in the wood where often you and I<br>Upon faint primrose beds were wont to lie,<br>Emptying our bosoms of their counsel sweet,<br>There my Lysander and myself shall meet,<br>And thence from Athens turn away our eyes,<br>To seek new friends and stranger companies.<br>Farewell, sweet playfellow. Pray thou for us,<br>And good luck grant thee thy Demetrius!<br>Keep word, Lysander. We must starve our sight<br>From lovers’ food, till morrow deep midnight.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>I will, my Hermia.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Hermia.]</p>
+<p style="margin:0 0 10px;">Helena, adieu.<br>As you on him, Demetrius dote on you!</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Lysander.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>How happy some o’er other some can be!<br>Through Athens I am thought as fair as she.<br>But what of that? Demetrius thinks not so;<br>He will not know what all but he do know.<br>And as he errs, doting on Hermia’s eyes,<br>So I, admiring of his qualities.<br>Things base and vile, holding no quantity,<br>Love can transpose to form and dignity.<br>Love looks not with the eyes, but with the mind;<br>And therefore is wing’d Cupid painted blind.<br>Nor hath love’s mind of any judgment taste.<br>Wings, and no eyes, figure unheedy haste.<br>And therefore is love said to be a child,<br>Because in choice he is so oft beguil’d.<br>As waggish boys in game themselves forswear,<br>So the boy Love is perjur’d everywhere.<br>For, ere Demetrius look’d on Hermia’s eyne,<br>He hail’d down oaths that he was only mine;<br>And when this hail some heat from Hermia felt,<br>So he dissolv’d, and showers of oaths did melt.<br>I will go tell him of fair Hermia’s flight.<br>Then to the wood will he tomorrow night<br>Pursue her; and for this intelligence<br>If I have thanks, it is a dear expense.<br>But herein mean I to enrich my pain,<br>To have his sight thither and back again.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Helena.]</p><p style="font-size:12px;color:#3B4E8C;margin-top:14px;">William Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em> (public domain; Project Gutenberg eBook #1514)</p></div></details></div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; EGEUS&rsquo;S CLAIM</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Egeus arrives with a complaint against his daughter and against Lysander, who he says has won her heart by courting her at night with verses and tokens. His request to the duke depends on one phrase, repeated in different forms: she is <em>his</em>.</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Be it so she will not here before your grace<br>Consent to marry with Demetrius,<br>I beg the ancient privilege of Athens:<br>As she is mine I may dispose of her;<br>Which shall be either to this gentleman<br>Or to her death, according to our law<br>Immediately provided in that case.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The language is the language of property. A daughter who is &ldquo;mine&rdquo; may be &ldquo;disposed of&rdquo;, and the only alternatives the speech offers are marriage to Demetrius or death. Egeus also charges Lysander with a kind of theft:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;This man hath bewitch&rsquo;d the bosom of my child.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 0;">Bewitching is a loaded word in a play that will soon bring enchantment on stage. Here it is a figure of speech for persuasion Egeus considers illegitimate.</p>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THESEUS APPLIES THE LAW</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Theseus answers Hermia first with an argument from authority. A father, he says, is like a god, and a daughter is like an impression in wax that the father may keep or destroy:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;To you your father should be as a god;<br>One that compos&rsquo;d your beauties, yea, and one<br>To whom you are but as a form in wax<br>By him imprinted, and within his power<br>To leave the figure, or disfigure it.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">He concedes that Demetrius is not clearly the better man. He rules for Demetrius anyway, on the ground that the father&rsquo;s voice is missing from Lysander&rsquo;s side:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;In himself he is.<br>But in this kind, wanting your father&rsquo;s voice,<br>The other must be held the worthier.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then he states the penalty, and adds a time limit:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Either to die the death, or to abjure<br>For ever the society of men.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Take time to pause; and by the next new moon<br>The sealing-day betwixt my love and me<br>For everlasting bond of fellowship,<br>Upon that day either prepare to die<br>For disobedience to your father&rsquo;s will,&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Two details complicate the picture of a ruler simply serving the law. First, Theseus admits he forgot to raise a relevant matter with Demetrius, who had courted Helena before Hermia:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;I must confess that I have heard so much,<br>And with Demetrius thought to have spoke thereof;<br>But, being over-full of self-affairs,<br>My mind did lose it.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Second, he describes the law as beyond his power to soften:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Or else the law of Athens yields you up<br>(Which by no means we may extenuate)<br>To death, or to a vow of single life.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 0;">The ruler who says he cannot soften the law is the same ruler who let a relevant fact slip because he was busy with his own wedding. The two admissions together show how a community&rsquo;s law depends on the attention of the person who enforces it.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; FIRST READ</div>
+            <div class="widget-question">Which of the four claims looks strongest on a first reading of the scene?</div>
+            <div class="widget-options">
+                <button data-response="The law does favor him, and Theseus treats it as binding. The weak point is that the law serves one party and disregards the person it governs.">Egeus: the law is on his side and he asks for it in plain terms.</button>
+                <button data-response="Her claim carries moral weight, and she shows she understands the penalty. The weak point is that the law of Athens gives her no standing.">Hermia: the choice is hers and she accepts the cost.</button>
+                <button data-response="The deadline is real, but he also says he cannot soften the law, and he admits he forgot a relevant fact about Demetrius.">Theseus: he balances duty and mercy by giving a deadline.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; HERMIA&rsquo;S CHOICE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Hermia&rsquo;s first move is to ask what the law would do to her. She does not ask for mercy. She asks for the facts:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;I know not by what power I am made bold,<br>Nor how it may concern my modesty<br>In such a presence here to plead my thoughts:<br>But I beseech your Grace that I may know<br>The worst that may befall me in this case,<br>If I refuse to wed Demetrius.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When Theseus gives her the two penalties, she chooses with the penalty in view:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;So will I grow, so live, so die, my lord,<br>Ere I will yield my virgin patent up<br>Unto his lordship, whose unwish&egrave;d yoke<br>My soul consents not to give sovereignty.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The vocabulary of rule appears again, now turned around. Hermia speaks of a &ldquo;yoke&rdquo; and of &ldquo;sovereignty&rdquo;, and says her soul does not consent to give it. Her claim is that the authority over her own choice belongs to her.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Lysander&rsquo;s reply to Egeus&rsquo;s claim uses the language of rank and fairness:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Why should not I then prosecute my right?&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 1.1 (public domain)</div>
+        <div style="background: #FFFDF7; border: 1px solid #E7D6AE; border-radius: 8px; padding: 20px 22px; margin: 6px 0 16px 0;">
+            <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px; letter-spacing: 0.4px;">&#9878; WHOSE CLAIM? FOUR POSITIONS IN ACT 1, SCENE 1</div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:14px;">
+                <div style="flex:1; min-width:230px; border-left:3px solid #C7922C; padding-left:12px;">
+                    <div style="font-size:13px; color:#C7922C;">EGEUS</div>
+                    <div style="font-size:15px; color:#1a2340; line-height:1.55;"><strong>Claims:</strong> a father may choose his daughter&rsquo;s husband.<br><strong>Rests on:</strong> the ancient privilege of Athens and his own consent to Demetrius.<br><strong>Leaves out:</strong> Hermia&rsquo;s consent.</div>
+                </div>
+                <div style="flex:1; min-width:230px; border-left:3px solid #3B4E8C; padding-left:12px;">
+                    <div style="font-size:13px; color:#3B4E8C;">THESEUS</div>
+                    <div style="font-size:15px; color:#1a2340; line-height:1.55;"><strong>Claims:</strong> the law and a father&rsquo;s judgment must stand.<br><strong>Rests on:</strong> his office as duke and the force of the law.<br><strong>Leaves out:</strong> Demetrius&rsquo;s past with Helena, which he admits he let slip.</div>
+                </div>
+                <div style="flex:1; min-width:230px; border-left:3px solid #C7922C; padding-left:12px;">
+                    <div style="font-size:13px; color:#C7922C;">HERMIA</div>
+                    <div style="font-size:15px; color:#1a2340; line-height:1.55;"><strong>Claims:</strong> her own will decides whom she marries.<br><strong>Rests on:</strong> her soul&rsquo;s consent.<br><strong>Leaves out:</strong> her father&rsquo;s authority, which the law of Athens enforces.</div>
+                </div>
+                <div style="flex:1; min-width:230px; border-left:3px solid #3B4E8C; padding-left:12px;">
+                    <div style="font-size:13px; color:#3B4E8C;">LYSANDER</div>
+                    <div style="font-size:15px; color:#1a2340; line-height:1.55;"><strong>Claims:</strong> his right to Hermia is at least equal to Demetrius&rsquo;s.<br><strong>Rests on:</strong> equal rank and fortune, and Hermia&rsquo;s love.<br><strong>Leaves out:</strong> the father&rsquo;s consent, which the law treats as decisive.</div>
+                </div>
+            </div>
+        </div>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHAT DOES THE EVIDENCE SHOW?</div>
+            <div class="widget-question">Choose the reading the text best supports.</div>
+
+            <div class="widget-row" data-correct="1" data-fb="Right. Theseus knew something bearing on Demetrius&amp;rsquo;s worth and let it lapse. His ruling for Demetrius therefore rests on less than he had to work with." data-hint="Reread the lines beginning &amp;lsquo;I must confess that I have heard so much.&amp;rsquo; Ask what Theseus knew, and whether he used it when he ruled.">
+                <div class="widget-row-prompt">1. Theseus admits he forgot to speak with Demetrius about Helena. What does that admission add to his judgment of Hermia&rsquo;s case?</div>
+                <div class="widget-options">
+                    <button data-choice="0">It shows he secretly favors Lysander and is looking for a reason to delay the wedding of Demetrius.</button>
+                    <button data-choice="1">It shows his ruling rests on incomplete information about the man he prefers.</button>
+                    <button data-choice="2">It proves the law of Athens is invalid, so Hermia owes it no obedience from that moment on.</button>
+                    <button data-choice="3">It shows he thinks Egeus has lied about Demetrius and wants to punish Egeus for it.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3" data-fb="Correct. She asks first, hears both penalties, and then answers &amp;lsquo;So will I grow, so live, so die.&amp;rsquo; The order of the speeches shows a choice made with the cost in view." data-hint="Look at the order of events: she asks, Theseus answers, and only then does she give her reply. What does asking first suggest?">
+                <div class="widget-row-prompt">2. Hermia asks to know &ldquo;the worst that may befall me.&rdquo; What does the request show about her choice?</div>
+                <div class="widget-options">
+                    <button data-choice="0">She is unsure whether she will disobey and wants more time to decide before answering.</button>
+                    <button data-choice="1">She hopes to bargain the penalty down before she gives any answer to the duke.</button>
+                    <button data-choice="2">She doubts that the duke has the authority to punish her and tests his answer.</button>
+                    <button data-choice="3">She weighs the penalty openly before she refuses, so the refusal is informed.</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #3B4E8C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 14px;">&#128273; KEY TERMS</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>privilege</strong>: a right granted to one person or group by law or custom.</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>authority</strong>: the power to command or to decide, claimed by an office, a custom, or a person.</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>consent</strong>: agreement given freely by the person affected.</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>sovereignty</strong>: supreme authority over a person, a choice, or a realm.</div>
+    </div>
+
+</div>
+<!-- ===== /BODY WRAPPER ===== -->
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Week 1 &middot; The Law of Athens</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

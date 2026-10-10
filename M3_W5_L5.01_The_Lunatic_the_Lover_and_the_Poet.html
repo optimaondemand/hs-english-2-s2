@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.R.1.1; ELA.10.R.1.2; ELA.10.R.3.4; ELA.K12.EE.3.1" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(7)(C); TEKS 110.37(c)(7)(E) (partial)" />
+<title>English 2 &middot; The Lunatic, the Lover, and the Poet</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    /* ===== WIDGET CSS (recolored to the ELA gold/indigo palette; no green/teal) ===== */
+    .optima-widget { background: linear-gradient(135deg, #EEF1F8 0%, #F4F6FA 100%); border: 1px solid #C7D0E5; border-left: 5px solid #3B4E8C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #3B4E8C; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #3B4E8C; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #FDF3E3; border-color: #C7922C; color: #7A5A17; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #FDF3E3; border-left: 3px solid #C7922C; color: #7A5A17; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH 2</div>
+    <div style="font-size: 18px; color: #55c8e8;">Quarter 3 &middot; Module 3: A Midsummer Night&rsquo;s Dream, Law, Desire, and the Restored Order &middot; Week 5 &middot; Student Page</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #1a2340;">A Midsummer Night&rsquo;s Dream: Law, Desire, and the Restored Order</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Week / Type</div>
+        <div style="font-size: 17px; color: #0e1c42;">Week 5</div>
+        <div style="font-size: 12px; color: #1a2340;">Literature</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">A Midsummer Night&rsquo;s Dream</div>
+        <div style="font-size: 12px; color: #1a2340;">William Shakespeare (public domain)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Law, Desire, and the Restored Order</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Week 5 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Lunatic, the Lover, and the Poet</div>
+        <div style="font-size: 16px; color: #1a2340;">Literature &middot; Week 5</div>
+    </div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128214; TODAY&rsquo;S FOCUS</div><div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Theseus calls the lovers&rsquo; story imagination. Hippolyta calls it evidence.</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;">The exchange opens Act 5 and sets the terms for the rest of the scene: what imagination produces, what reason can confirm, and who decides which counts as truth. The audience knows more than the duke does.</div></div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; OBJECTIVES</div><div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;"><div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> summarize Theseus&rsquo;s claim about imagination and the three figures he names.</div></div><div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;"><div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> explain Hippolyta&rsquo;s reply as an argument from evidence.</div></div><div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0;"><div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div><div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> identify the dramatic irony in a ruler&rsquo;s explanation of a night he did not witness.</div></div></div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128214; READING</div><div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 18px; flex-shrink: 0;">&#9654;</span><div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Read Act 5, Scene 1, from the opening through Theseus&rsquo;s greeting to the lovers. Full text: <a href="https://www.gutenberg.org/ebooks/1514" style="color:#3B4E8C;">Gutenberg eBook #1514</a>.</div></div><div class="embed-reading" data-src="mnd" data-part="5.1"><details class="embed-reading-panel" data-ra-skip style="border:1px solid #D0D9E8;border-left:5px solid #C7922C;border-radius:8px;margin:16px 0;background:#FFFFFF;"><summary style="cursor:pointer;padding:12px 16px;font-size:14px;color:#0E1C42;background:#FDF3E3;border-radius:6px;"><strong>&#128214; Read the full text: A Midsummer Night&rsquo;s Dream, Act 5, Scene 1</strong></summary><div style="padding:16px 20px;font-size:15px;line-height:1.65;color:#1a2340;max-height:560px;overflow-y:auto;"><p style="font-size:13px;color:#3B4E8C;letter-spacing:0.4px;margin:0 0 12px;"><strong>SCENE I. Athens. An Apartment in the Palace of Theseus</strong></p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Theseus, Hippolyta, Philostrate, Lords and Attendants.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>’Tis strange, my Theseus, that these lovers speak of.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>More strange than true. I never may believe<br>These antique fables, nor these fairy toys.<br>Lovers and madmen have such seething brains,<br>Such shaping fantasies, that apprehend<br>More than cool reason ever comprehends.<br>The lunatic, the lover, and the poet<br>Are of imagination all compact:<br>One sees more devils than vast hell can hold;<br>That is the madman: the lover, all as frantic,<br>Sees Helen’s beauty in a brow of Egypt:<br>The poet’s eye, in a fine frenzy rolling,<br>Doth glance from heaven to earth, from earth to heaven;<br>And as imagination bodies forth<br>The forms of things unknown, the poet’s pen<br>Turns them to shapes, and gives to airy nothing<br>A local habitation and a name.<br>Such tricks hath strong imagination,<br>That if it would but apprehend some joy,<br>It comprehends some bringer of that joy.<br>Or in the night, imagining some fear,<br>How easy is a bush supposed a bear?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>But all the story of the night told over,<br>And all their minds transfigur’d so together,<br>More witnesseth than fancy’s images,<br>And grows to something of great constancy;<br>But, howsoever, strange and admirable.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter lovers: Lysander, Demetrius, Hermia and Helena.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Here come the lovers, full of joy and mirth.<br>Joy, gentle friends, joy and fresh days of love<br>Accompany your hearts!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>More than to us<br>Wait in your royal walks, your board, your bed!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Come now; what masques, what dances shall we have,<br>To wear away this long age of three hours<br>Between our after-supper and bed-time?<br>Where is our usual manager of mirth?<br>What revels are in hand? Is there no play<br>To ease the anguish of a torturing hour?<br>Call Philostrate.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PHILOSTRATE</strong><br>Here, mighty Theseus.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Say, what abridgment have you for this evening?<br>What masque? What music? How shall we beguile<br>The lazy time, if not with some delight?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PHILOSTRATE</strong><br>There is a brief how many sports are ripe.<br>Make choice of which your Highness will see first.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Giving a paper.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>[Reads] ‘The battle with the Centaurs, to be sung<br>By an Athenian eunuch to the harp.’<br>We’ll none of that. That have I told my love<br>In glory of my kinsman Hercules.<br>‘The riot of the tipsy Bacchanals,<br>Tearing the Thracian singer in their rage?’<br>That is an old device, and it was play’d<br>When I from Thebes came last a conqueror.<br>‘The thrice three Muses mourning for the death<br>Of learning, late deceas’d in beggary.’<br>That is some satire, keen and critical,<br>Not sorting with a nuptial ceremony.<br>‘A tedious brief scene of young Pyramus<br>And his love Thisbe; very tragical mirth.’<br>Merry and tragical? Tedious and brief?<br>That is hot ice and wondrous strange snow.<br>How shall we find the concord of this discord?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PHILOSTRATE</strong><br>A play there is, my lord, some ten words long,<br>Which is as brief as I have known a play;<br>But by ten words, my lord, it is too long,<br>Which makes it tedious. For in all the play<br>There is not one word apt, one player fitted.<br>And tragical, my noble lord, it is.<br>For Pyramus therein doth kill himself,<br>Which, when I saw rehears’d, I must confess,<br>Made mine eyes water; but more merry tears<br>The passion of loud laughter never shed.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>What are they that do play it?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PHILOSTRATE</strong><br>Hard-handed men that work in Athens here,<br>Which never labour’d in their minds till now;<br>And now have toil’d their unbreath’d memories<br>With this same play against your nuptial.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>And we will hear it.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PHILOSTRATE</strong><br>No, my noble lord,<br>It is not for you: I have heard it over,<br>And it is nothing, nothing in the world;<br>Unless you can find sport in their intents,<br>Extremely stretch’d and conn’d with cruel pain<br>To do you service.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>I will hear that play;<br>For never anything can be amiss<br>When simpleness and duty tender it.<br>Go, bring them in: and take your places, ladies.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Philostrate.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>I love not to see wretchedness o’ercharged,<br>And duty in his service perishing.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Why, gentle sweet, you shall see no such thing.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>He says they can do nothing in this kind.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>The kinder we, to give them thanks for nothing.<br>Our sport shall be to take what they mistake:<br>And what poor duty cannot do, noble respect<br>Takes it in might, not merit.<br>Where I have come, great clerks have purposed<br>To greet me with premeditated welcomes;<br>Where I have seen them shiver and look pale,<br>Make periods in the midst of sentences,<br>Throttle their practis’d accent in their fears,<br>And, in conclusion, dumbly have broke off,<br>Not paying me a welcome. Trust me, sweet,<br>Out of this silence yet I pick’d a welcome;<br>And in the modesty of fearful duty<br>I read as much as from the rattling tongue<br>Of saucy and audacious eloquence.<br>Love, therefore, and tongue-tied simplicity<br>In least speak most to my capacity.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Philostrate.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PHILOSTRATE</strong><br>So please your grace, the Prologue is address’d.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Let him approach.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Flourish of trumpets. Enter the Prologue.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PROLOGUE</strong><br>If we offend, it is with our good will.<br>That you should think, we come not to offend,<br>But with good will.  To show our simple skill,<br>That is the true beginning of our end.<br>Consider then, we come but in despite.<br>We do not come, as minding to content you,<br>Our true intent is.  All for your delight<br>We are not here.  That you should here repent you,<br>The actors are at hand, and, by their show,<br>You shall know all that you are like to know.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>This fellow doth not stand upon points.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>He hath rid his prologue like a rough colt; he knows not the stop. A<br>good moral, my lord: it is not enough to speak, but to speak true.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>Indeed he hath played on this prologue like a child on a recorder; a<br>sound, but not in government.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>His speech was like a tangled chain; nothing impaired, but all<br>disordered. Who is next?</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Pyramus and Thisbe, Wall, Moonshine and Lion as in dumb show.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PROLOGUE</strong><br>Gentles, perchance you wonder at this show;<br>But wonder on, till truth make all things plain.<br>This man is Pyramus, if you would know;<br>This beauteous lady Thisbe is certain.<br>This man, with lime and rough-cast, doth present<br>Wall, that vile wall which did these lovers sunder;<br>And through Wall’s chink, poor souls, they are content<br>To whisper, at the which let no man wonder.<br>This man, with lantern, dog, and bush of thorn,<br>Presenteth Moonshine, for, if you will know,<br>By moonshine did these lovers think no scorn<br>To meet at Ninus’ tomb, there, there to woo.<br>This grisly beast (which Lion hight by name)<br>The trusty Thisbe, coming first by night,<br>Did scare away, or rather did affright;<br>And as she fled, her mantle she did fall;<br>Which Lion vile with bloody mouth did stain.<br>Anon comes Pyramus, sweet youth, and tall,<br>And finds his trusty Thisbe’s mantle slain;<br>Whereat with blade, with bloody blameful blade,<br>He bravely broach’d his boiling bloody breast;<br>And Thisbe, tarrying in mulberry shade,<br>His dagger drew, and died. For all the rest,<br>Let Lion, Moonshine, Wall, and lovers twain,<br>At large discourse while here they do remain.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exeunt Prologue, Pyramus, Thisbe, Lion and Moonshine.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>I wonder if the lion be to speak.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>No wonder, my lord. One lion may, when many asses do.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">WALL</strong><br>In this same interlude it doth befall<br>That I, one Snout by name, present a wall:<br>And such a wall as I would have you think<br>That had in it a crannied hole or chink,<br>Through which the lovers, Pyramus and Thisbe,<br>Did whisper often very secretly.<br>This loam, this rough-cast, and this stone, doth show<br>That I am that same wall; the truth is so:<br>And this the cranny is, right and sinister,<br>Through which the fearful lovers are to whisper.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Would you desire lime and hair to speak better?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>It is the wittiest partition that ever I heard discourse, my lord.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Pyramus draws near the wall; silence.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Pyramus.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>O grim-look’d night! O night with hue so black!<br>O night, which ever art when day is not!<br>O night, O night, alack, alack, alack,<br>I fear my Thisbe’s promise is forgot!<br>And thou, O wall, O sweet, O lovely wall,<br>That stand’st between her father’s ground and mine;<br>Thou wall, O wall, O sweet and lovely wall,<br>Show me thy chink, to blink through with mine eyne.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Wall holds up his fingers.]</p>
+<p style="margin:0 0 10px;">Thanks, courteous wall: Jove shield thee well for this!<br>But what see I? No Thisbe do I see.<br>O wicked wall, through whom I see no bliss,<br>Curs’d be thy stones for thus deceiving me!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>The wall, methinks, being sensible, should curse again.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>No, in truth, sir, he should not. ‘Deceiving me’ is Thisbe’s cue: she<br>is to enter now, and I am to spy her through the wall. You shall see it<br>will fall pat as I told you. Yonder she comes.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Thisbe.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>O wall, full often hast thou heard my moans,<br>For parting my fair Pyramus and me.<br>My cherry lips have often kiss’d thy stones,<br>Thy stones with lime and hair knit up in thee.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>I see a voice; now will I to the chink,<br>To spy an I can hear my Thisbe’s face.<br>Thisbe?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>My love thou art, my love I think.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>Think what thou wilt, I am thy lover’s grace;<br>And like Limander am I trusty still.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>And I like Helen, till the fates me kill.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>Not Shafalus to Procrus was so true.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>As Shafalus to Procrus, I to you.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>O kiss me through the hole of this vile wall.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>I kiss the wall’s hole, not your lips at all.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>Wilt thou at Ninny’s tomb meet me straightway?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>’Tide life, ’tide death, I come without delay.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">WALL</strong><br>Thus have I, Wall, my part discharged so;<br>And, being done, thus Wall away doth go.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exeunt Wall, Pyramus and Thisbe.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Now is the mural down between the two neighbours.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>No remedy, my lord, when walls are so wilful to hear without warning.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>This is the silliest stuff that ever I heard.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>The best in this kind are but shadows; and the worst are no worse, if<br>imagination amend them.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>It must be your imagination then, and not theirs.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>If we imagine no worse of them than they of themselves, they may pass<br>for excellent men. Here come two noble beasts in, a man and a lion.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Lion and Moonshine.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LION</strong><br>You, ladies, you, whose gentle hearts do fear<br>The smallest monstrous mouse that creeps on floor,<br>May now, perchance, both quake and tremble here,<br>When lion rough in wildest rage doth roar.<br>Then know that I, one Snug the joiner, am<br>A lion fell, nor else no lion’s dam;<br>For if I should as lion come in strife<br>Into this place, ’twere pity on my life.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>A very gentle beast, and of a good conscience.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>The very best at a beast, my lord, that e’er I saw.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>This lion is a very fox for his valour.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>True; and a goose for his discretion.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Not so, my lord, for his valour cannot carry his discretion, and the<br>fox carries the goose.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>His discretion, I am sure, cannot carry his valour; for the goose<br>carries not the fox. It is well; leave it to his discretion, and let us<br>listen to the moon.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">MOONSHINE</strong><br>This lanthorn doth the hornèd moon present.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>He should have worn the horns on his head.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>He is no crescent, and his horns are invisible within the<br>circumference.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">MOONSHINE</strong><br>This lanthorn doth the hornèd moon present;<br>Myself the man i’ the moon do seem to be.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>This is the greatest error of all the rest; the man should be put into<br>the lantern. How is it else the man i’ the moon?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>He dares not come there for the candle, for you see, it is already in<br>snuff.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>I am aweary of this moon. Would he would change!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>It appears by his small light of discretion that he is in the wane; but<br>yet, in courtesy, in all reason, we must stay the time.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Proceed, Moon.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">MOON</strong><br>All that I have to say, is to tell you that the lantern is the moon; I<br>the man i’ the moon; this thorn-bush my thorn-bush; and this dog my<br>dog.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Why, all these should be in the lantern, for all these are in the moon.<br>But silence; here comes Thisbe.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Thisbe.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>This is old Ninny’s tomb. Where is my love?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LION</strong><br>Oh!</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[The Lion roars, Thisbe runs off.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Well roared, Lion.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Well run, Thisbe.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>Well shone, Moon. Truly, the moon shines with a good grace.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[The Lion tears Thisbe’s mantle, and exit.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Well moused, Lion.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>And then came Pyramus.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>And so the lion vanished.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Pyramus.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>Sweet Moon, I thank thee for thy sunny beams;<br>I thank thee, Moon, for shining now so bright;<br>For, by thy gracious golden, glittering gleams,<br>I trust to take of truest Thisbe sight.<br>But stay! O spite!<br>But mark, poor knight,<br>What dreadful dole is here!<br>Eyes, do you see?<br>How can it be?<br>O dainty duck! O dear!<br>Thy mantle good,<br>What, stained with blood?<br>Approach, ye Furies fell!<br>O Fates, come, come;<br>Cut thread and thrum;<br>Quail, rush, conclude, and quell!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>This passion, and the death of a dear friend, would go near to make a<br>man look sad.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>Beshrew my heart, but I pity the man.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PYRAMUS</strong><br>O wherefore, Nature, didst thou lions frame,<br>Since lion vile hath here deflower’d my dear?<br>Which is—no, no—which was the fairest dame<br>That liv’d, that lov’d, that lik’d, that look’d with cheer.<br>Come, tears, confound!<br>Out, sword, and wound<br>The pap of Pyramus;<br>Ay, that left pap,<br>Where heart doth hop:<br>Thus die I, thus, thus, thus.<br>Now am I dead,<br>Now am I fled;<br>My soul is in the sky.<br>Tongue, lose thy light!<br>Moon, take thy flight!<br>Now die, die, die, die, die.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Dies. Exit Moonshine.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>No die, but an ace, for him; for he is but one.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>Less than an ace, man; for he is dead, he is nothing.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>With the help of a surgeon he might yet recover and prove an ass.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>How chance Moonshine is gone before Thisbe comes back and finds her<br>lover?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>She will find him by starlight.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Thisbe.</p>
+<p style="margin:0 0 10px;">Here she comes, and her passion ends the play.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HIPPOLYTA</strong><br>Methinks she should not use a long one for such a Pyramus. I hope she<br>will be brief.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>A mote will turn the balance, which Pyramus, which Thisbe, is the<br>better: he for a man, God warrant us; she for a woman, God bless us!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">LYSANDER</strong><br>She hath spied him already with those sweet eyes.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>And thus she means, videlicet—</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THISBE</strong><br>Asleep, my love?<br>What, dead, my dove?<br>O Pyramus, arise,<br>Speak, speak. Quite dumb?<br>Dead, dead? A tomb<br>Must cover thy sweet eyes.<br>These lily lips,<br>This cherry nose,<br>These yellow cowslip cheeks,<br>Are gone, are gone!<br>Lovers, make moan;<br>His eyes were green as leeks.<br>O Sisters Three,<br>Come, come to me,<br>With hands as pale as milk;<br>Lay them in gore,<br>Since you have shore<br>With shears his thread of silk.<br>Tongue, not a word:<br>Come, trusty sword,<br>Come, blade, my breast imbrue;<br>And farewell, friends.<br>Thus Thisbe ends.<br>Adieu, adieu, adieu.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Dies.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>Moonshine and Lion are left to bury the dead.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Ay, and Wall too.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">BOTTOM</strong><br>No, I assure you; the wall is down that parted their fathers. Will it<br>please you to see the epilogue, or to hear a Bergomask dance between<br>two of our company?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">THESEUS</strong><br>No epilogue, I pray you; for your play needs no excuse. Never excuse;<br>for when the players are all dead there need none to be blamed. Marry,<br>if he that writ it had played Pyramus, and hanged himself in Thisbe’s<br>garter, it would have been a fine tragedy; and so it is, truly; and<br>very notably discharged. But come, your Bergomask; let your epilogue<br>alone.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Here a dance of Clowns.]</p>
+<p style="margin:0 0 10px;">The iron tongue of midnight hath told twelve.<br>Lovers, to bed; ’tis almost fairy time.<br>I fear we shall outsleep the coming morn<br>As much as we this night have overwatch’d.<br>This palpable-gross play hath well beguil’d<br>The heavy gait of night. Sweet friends, to bed.<br>A fortnight hold we this solemnity<br>In nightly revels and new jollity.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exeunt.]</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Puck.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>Now the hungry lion roars,<br>And the wolf behowls the moon;<br>Whilst the heavy ploughman snores,<br>All with weary task fordone.<br>Now the wasted brands do glow,<br>Whilst the screech-owl, screeching loud,<br>Puts the wretch that lies in woe<br>In remembrance of a shroud.<br>Now it is the time of night<br>That the graves, all gaping wide,<br>Every one lets forth his sprite,<br>In the church-way paths to glide.<br>And we fairies, that do run<br>By the triple Hecate’s team<br>From the presence of the sun,<br>Following darkness like a dream,<br>Now are frolic; not a mouse<br>Shall disturb this hallow’d house.<br>I am sent with broom before,<br>To sweep the dust behind the door.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Oberon and Titania with their Train.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Through the house give glimmering light,<br>By the dead and drowsy fire.<br>Every elf and fairy sprite<br>Hop as light as bird from brier,<br>And this ditty after me,<br>Sing and dance it trippingly.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>First rehearse your song by rote,<br>To each word a warbling note;<br>Hand in hand, with fairy grace,<br>Will we sing, and bless this place.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Song and Dance.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Now, until the break of day,<br>Through this house each fairy stray.<br>To the best bride-bed will we,<br>Which by us shall blessèd be;<br>And the issue there create<br>Ever shall be fortunate.<br>So shall all the couples three<br>Ever true in loving be;<br>And the blots of Nature’s hand<br>Shall not in their issue stand:<br>Never mole, hare-lip, nor scar,<br>Nor mark prodigious, such as are<br>Despised in nativity,<br>Shall upon their children be.<br>With this field-dew consecrate,<br>Every fairy take his gait,<br>And each several chamber bless,<br>Through this palace, with sweet peace;<br>And the owner of it blest.<br>Ever shall it in safety rest,<br>Trip away. Make no stay;<br>Meet me all by break of day.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exeunt Oberon, Titania and Train.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>If we shadows have offended,<br>Think but this, and all is mended,<br>That you have but slumber’d here<br>While these visions did appear.<br>And this weak and idle theme,<br>No more yielding but a dream,<br>Gentles, do not reprehend.<br>If you pardon, we will mend.<br>And, as I am an honest Puck,<br>If we have unearnèd luck<br>Now to ’scape the serpent’s tongue,<br>We will make amends ere long;<br>Else the Puck a liar call.<br>So, good night unto you all.<br>Give me your hands, if we be friends,<br>And Robin shall restore amends.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit.]</p><p style="font-size:12px;color:#3B4E8C;margin-top:14px;">William Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em> (public domain; Project Gutenberg eBook #1514)</p></div></details></div></div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THESEUS DISMISSES THE STORY</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The lovers have told the court what happened in the wood. Hippolyta finds it strange. Theseus answers:</p><blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;"><strong style="font-style: normal; font-size: 13px; letter-spacing: 0.5px; color: #3B4E8C;">HIPPOLYTA</strong><br />’Tis strange, my Theseus, that these lovers speak of.<br /><strong style="font-style: normal; font-size: 13px; letter-spacing: 0.5px; color: #3B4E8C;">THESEUS</strong><br />More strange than true. I never may believe<br />These antique fables, nor these fairy toys.<br />Lovers and madmen have such seething brains,<br />Such shaping fantasies, that apprehend<br />More than cool reason ever comprehends.</blockquote><div style="font-size: 12px; color: #1a2340; margin: 0 0 14px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 5.1 (public domain)</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">His claim is that the lovers&rsquo; story comes from imagination, not from events. <em>Seething</em> means boiling, <em>apprehend</em> means to take hold of, and <em>comprehends</em> means to grasp as true. Their minds, he says, take hold of more than cool reason can confirm.</p><div class="optima-widget ow-reflect"><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Four people who did not rehearse together tell the same strange story. Does their agreement make it more believable?</div><div class="widget-options"><button data-response="That is Hippolyta’s position in her reply. Four accounts that match are harder to explain as one person’s fancy.">Yes: independent agreement counts as evidence</button><button data-response="That is close to Theseus’s position. His example of fear supposing a bush is a bear is a mistake that many people could make in the same dark.">No: shared impressions can share the same mistake</button><button data-response="The lovers did compare notes: Demetrius proposed it in the previous scene. That makes the question harder, and it is the question the two speakers disagree about.">It depends on whether they could have compared notes</button></div><div class="widget-feedback"></div><button class="widget-reset">Reset</button></div></div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THREE KINDS OF SEEING</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The center of the speech is a list of three people whose imaginations produce pictures:</p><blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">The lunatic, the lover, and the poet<br />Are of imagination all compact:<br />One sees more devils than vast hell can hold;<br />That is the madman: the lover, all as frantic,<br />Sees Helen’s beauty in a brow of Egypt:<br />The poet’s eye, in a fine frenzy rolling,<br />Doth glance from heaven to earth, from earth to heaven;<br />And as imagination bodies forth<br />The forms of things unknown, the poet’s pen<br />Turns them to shapes, and gives to airy nothing<br />A local habitation and a name.</blockquote><div style="font-size: 12px; color: #1a2340; margin: 0 0 14px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 5.1 (public domain)</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The first two see what is not there: devils in empty air, a famous beauty in a face no one else would call beautiful. The third is different. The poet&rsquo;s eye turns &ldquo;<span class="pd-quote" data-src="mnd">forms of things unknown</span>&rdquo; into &ldquo;<span class="pd-quote" data-src="mnd">shapes</span>&rdquo; and gives them &ldquo;<span class="pd-quote" data-src="mnd">A local habitation and a name.</span>&rdquo; Theseus means the list as a criticism, but the poet&rsquo;s clause is the most admiring in the speech. The language of a man who says he distrusts imagination is itself a poet&rsquo;s language.</p><div style="background: #FFFDF7; border: 1px solid #E7D6AE; border-radius: 8px; padding: 20px 22px; margin: 6px 0 16px 0;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; letter-spacing: 0.4px;">&#128065;&#65039; WHAT EACH FIGURE SEES, AND WHAT PRODUCES IT</div><div style="display:flex; flex-wrap:wrap; gap:22px;"><div style="flex:1; min-width:210px; border-left:3px solid #3B4E8C; padding-left:12px;"><div style="font-size:13px; color:#3B4E8C; letter-spacing:0.3px; margin-bottom:4px;"><strong>THE LUNATIC</strong></div><div style="font-size:15px; color:#1a2340; line-height:1.55;">&ldquo;<span class="pd-quote" data-src="mnd">One sees more devils than vast hell can hold;</span>&rdquo;<br /><em>Fear supplies objects that are not there.</em></div></div><div style="flex:1; min-width:210px; border-left:3px solid #C7922C; padding-left:12px;"><div style="font-size:13px; color:#C7922C; letter-spacing:0.3px; margin-bottom:4px;"><strong>THE LOVER</strong></div><div style="font-size:15px; color:#1a2340; line-height:1.55;">&ldquo;<span class="pd-quote" data-src="mnd">Sees Helen’s beauty in a brow of Egypt:</span>&rdquo;<br /><em>Desire supplies beauty that others do not see.</em></div></div><div style="flex:1; min-width:210px; border-left:3px solid #0E1C42; padding-left:12px;"><div style="font-size:13px; color:#0E1C42; letter-spacing:0.3px; margin-bottom:4px;"><strong>THE POET</strong></div><div style="font-size:15px; color:#1a2340; line-height:1.55;">&ldquo;<span class="pd-quote" data-src="mnd">gives to airy nothing / A local habitation and a name.</span>&rdquo;<br /><em>Art gives form to what has none, and is the one act on the list that makes something.</em></div></div></div></div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The speech ends on fear: &ldquo;<span class="pd-quote" data-src="mnd">Or in the night, imagining some fear, / How easy is a bush supposed a bear?</span>&rdquo; The audience of the play has a particular position here. It has watched the fairies, Oberon&rsquo;s charm, and the changing of Lysander and Demetrius. The lovers&rsquo; story is not fantasy. Theseus&rsquo;s confident explanation is wrong about the facts and unaware of it, which is dramatic irony. The same ruler accepted a lover&rsquo;s word in Act 4 as the ground for a ruling, and calls such words the product of &ldquo;<span class="pd-quote" data-src="mnd">seething brains</span>&rdquo; here.</p></div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; HIPPOLYTA ANSWERS</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Hippolyta does not claim the lovers saw fairies. She argues from the way the story agrees with itself:</p><blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 6px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;"><strong style="font-style: normal; font-size: 13px; letter-spacing: 0.5px; color: #3B4E8C;">HIPPOLYTA</strong><br />But all the story of the night told over,<br />And all their minds transfigur’d so together,<br />More witnesseth than fancy’s images,<br />And grows to something of great constancy;<br />But, howsoever, strange and admirable.</blockquote><div style="font-size: 12px; color: #1a2340; margin: 0 0 14px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 5.1 (public domain)</div><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The argument is about evidence. When four minds change together and tell one story, that agreement &ldquo;<span class="pd-quote" data-src="mnd">More witnesseth than fancy’s images,</span>&rdquo; that is, it testifies more than a single imagined picture would. <em>Constancy</em> here means consistency, and <em>admirable</em> means worth wondering at. Her last clause concedes that the story is strange and refuses to call it false.</p><p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Theseus does not answer her. The lovers enter, and he greets them: &ldquo;<span class="pd-quote" data-src="mnd">Here come the lovers, full of joy and mirth.</span>&rdquo; The ruler ends the argument by changing the subject, and his version of the night is the one the court is left with.</p><div class="optima-widget ow-select"><div class="widget-kicker">&#9889; TRY IT &middot; WHAT DOES THE SPEECH DO?</div><div class="widget-question">For each item, choose the reading the text supports.</div><div class="widget-row" data-correct="1" data-fb="Right. The list is meant as a criticism: each imagines more than reason can check. But the poet clause is the most admiring in the speech, so the speaker’s own language undercuts his skepticism." data-hint="Reread the three figures. Does Theseus say they are lying, or that their imaginations run past reason? Then look at how he describes the poet."><div class="widget-row-prompt">1. Theseus lists &ldquo;<span class="pd-quote" data-src="mnd">the lunatic, the lover, and the poet</span>&rdquo; together. What does the grouping do?</div><div class="widget-options"><button data-choice="0">It praises all three as people who see more deeply than the cautious.</button><button data-choice="1">It groups three imaginers whose pictures outrun reason, in the words of a poet.</button><button data-choice="2">It accuses all three of lying to win favor at court.</button><button data-choice="3">It shows Theseus believes in fairies and is warning the lovers to keep quiet.</button></div></div><div class="widget-row" data-correct="3" data-fb="Correct. Witnesseth and constancy are evidence words. Agreement among four accounts counts for more than one person’s imagined picture." data-hint="Look at the verbs and nouns she uses: witnesseth, constancy. Are those words about pleasure, deception, or evidence?"><div class="widget-row-prompt">2. Hippolyta says the lovers&rsquo; story &ldquo;<span class="pd-quote" data-src="mnd">grows to something of great constancy.</span>&rdquo; What is her argument?</div><div class="widget-options"><button data-choice="0">She agrees with Theseus that it is fantasy but finds it pleasant.</button><button data-choice="1">She argues the lovers rehearsed the story in advance to deceive the court.</button><button data-choice="2">She argues the night is explained by wine and fatigue.</button><button data-choice="3">She argues that one story told by four changed minds outweighs any single fancy.</button></div></div><button class="widget-reset">Reset</button></div></div>
+
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;"><div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128170; TAKEAWAY</div><p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Theseus ranks imagination below reason, and his own speech is poetry. Hippolyta replies with an argument from the agreement of witnesses. The audience, which saw the fairies, holds the facts that decide between them.</p></div>
+
+</div>
+<!-- ===== /BODY WRAPPER ===== -->
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Literature &middot; The Lunatic, the Lover, and the Poet</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

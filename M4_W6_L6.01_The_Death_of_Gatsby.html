@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.R.1.1; ELA.10.R.1.2" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(6)(C)" />
+<title>English 2 &middot; The Death of Gatsby</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    /* ===== WIDGET CSS (recolored to the ELA gold/indigo palette; no green/teal) ===== */
+    .optima-widget { background: linear-gradient(135deg, #EEF1F8 0%, #F4F6FA 100%); border: 1px solid #C7D0E5; border-left: 5px solid #3B4E8C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #3B4E8C; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; text-align: left; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #3B4E8C; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #FDF3E3; border-color: #C7922C; color: #7A5A17; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #FDF3E3; border-left: 3px solid #C7922C; color: #7A5A17; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ws-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 14px 18px; margin-bottom: 10px; }
+    .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 16px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH 2</div>
+    <div style="font-size: 18px; color: #55c8e8;">Quarter 4 &middot; Module 4: The Great Gatsby, The American Dream and Its Cost &middot; Week 6 &middot; Literature</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 · Module 4</div>
+        <div style="font-size: 12px; color: #1a2340;">The Great Gatsby: The American Dream and Its Cost</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Week / Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Week 6</div>
+        <div style="font-size: 12px; color: #1a2340;">Literature</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Great Gatsby</div>
+        <div style="font-size: 12px; color: #1a2340;">F. Scott Fitzgerald, 1925 (public domain)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Self-Made King and the Community</div>
+        <div style="font-size: 12px; color: #1a2340;"></div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Week 6</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Death of Gatsby</div>
+        <div style="font-size: 16px; color: #1a2340;">Literature &middot; Week 6</div>
+    </div>
+    <!-- Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY&rsquo;S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Two men spend the same day moving toward the same pool, and the narrator reconstructs what he did not see.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Chapter 8 begins with Gatsby’s own account of Daisy and the war. It ends with his death, narrated by Nick from the evidence of the staff, the butler, and the garage.</div>
+    </div>
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> summarize Gatsby’s account of Daisy and the sequence of events that ends at the pool.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> explain how Wilson’s reading of the eyes of Doctor T. J. Eckleburg differs from Michaelis’s.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; ">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I can</strong> explain how Nick marks what he knows and what he infers about the death.</div>
+        </div>
+    </div>
+    <!-- Reading -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; READING</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Read Chapter 8. Full text free at <a href="https://www.gutenberg.org/ebooks/64317" style="color:#3B4E8C;">Gutenberg eBook #64317</a>.</div>
+        </div>
+        <div class="embed-reading" data-src="gatsby" data-part="8"><details class="embed-reading-panel" data-ra-skip style="border:1px solid #D0D9E8;border-left:5px solid #C7922C;border-radius:8px;margin:16px 0;background:#FFFFFF;"><summary style="cursor:pointer;padding:12px 16px;font-size:14px;color:#0E1C42;background:#FDF3E3;border-radius:6px;"><strong>&#128214; Read the full text: The Great Gatsby, Chapter VIII</strong></summary><div style="padding:16px 20px;font-size:15px;line-height:1.65;color:#1a2340;max-height:560px;overflow-y:auto;"><p style="margin:0 0 12px;">I couldn’t sleep all night; a foghorn was groaning incessantly on the Sound, and I tossed half-sick between grotesque reality and savage, frightening dreams. Toward dawn I heard a taxi go up Gatsby’s drive, and immediately I jumped out of bed and began to dress—I felt that I had something to tell him, something to warn him about, and morning would be too late.</p>
+<p style="margin:0 0 12px;">Crossing his lawn, I saw that his front door was still open and he was leaning against a table in the hall, heavy with dejection or sleep.</p>
+<p style="margin:0 0 12px;">“Nothing happened,” he said wanly. “I waited, and about four o’clock she came to the window and stood there for a minute and then turned out the light.”</p>
+<p style="margin:0 0 12px;">His house had never seemed so enormous to me as it did that night when we hunted through the great rooms for cigarettes. We pushed aside curtains that were like pavilions, and felt over innumerable feet of dark wall for electric light switches—once I tumbled with a sort of splash upon the keys of a ghostly piano. There was an inexplicable amount of dust everywhere, and the rooms were musty, as though they hadn’t been aired for many days. I found the humidor on an unfamiliar table, with two stale, dry cigarettes inside. Throwing open the French windows of the drawing-room, we sat smoking out into the darkness.</p>
+<p style="margin:0 0 12px;">“You ought to go away,” I said. “It’s pretty certain they’ll trace your car.”</p>
+<p style="margin:0 0 12px;">“Go away now, old sport?”</p>
+<p style="margin:0 0 12px;">“Go to Atlantic City for a week, or up to Montreal.”</p>
+<p style="margin:0 0 12px;">He wouldn’t consider it. He couldn’t possibly leave Daisy until he knew what she was going to do. He was clutching at some last hope and I couldn’t bear to shake him free.</p>
+<p style="margin:0 0 12px;">It was this night that he told me the strange story of his youth with Dan Cody—told it to me because “Jay Gatsby” had broken up like glass against Tom’s hard malice, and the long secret extravaganza was played out. I think that he would have acknowledged anything now, without reserve, but he wanted to talk about Daisy.</p>
+<p style="margin:0 0 12px;">She was the first “nice” girl he had ever known. In various unrevealed capacities he had come in contact with such people, but always with indiscernible barbed wire between. He found her excitingly desirable. He went to her house, at first with other officers from Camp Taylor, then alone. It amazed him—he had never been in such a beautiful house before. But what gave it an air of breathless intensity, was that Daisy lived there—it was as casual a thing to her as his tent out at camp was to him. There was a ripe mystery about it, a hint of bedrooms upstairs more beautiful and cool than other bedrooms, of gay and radiant activities taking place through its corridors, and of romances that were not musty and laid away already in lavender but fresh and breathing and redolent of this year’s shining motorcars and of dances whose flowers were scarcely withered. It excited him, too, that many men had already loved Daisy—it increased her value in his eyes. He felt their presence all about the house, pervading the air with the shades and echoes of still vibrant emotions.</p>
+<p style="margin:0 0 12px;">But he knew that he was in Daisy’s house by a colossal accident. However glorious might be his future as Jay Gatsby, he was at present a penniless young man without a past, and at any moment the invisible cloak of his uniform might slip from his shoulders. So he made the most of his time. He took what he could get, ravenously and unscrupulously—eventually he took Daisy one still October night, took her because he had no real right to touch her hand.</p>
+<p style="margin:0 0 12px;">He might have despised himself, for he had certainly taken her under false pretences. I don’t mean that he had traded on his phantom millions, but he had deliberately given Daisy a sense of security; he let her believe that he was a person from much the same strata as herself—that he was fully able to take care of her. As a matter of fact, he had no such facilities—he had no comfortable family standing behind him, and he was liable at the whim of an impersonal government to be blown anywhere about the world.</p>
+<p style="margin:0 0 12px;">But he didn’t despise himself and it didn’t turn out as he had imagined. He had intended, probably, to take what he could and go—but now he found that he had committed himself to the following of a grail. He knew that Daisy was extraordinary, but he didn’t realize just how extraordinary a “nice” girl could be. She vanished into her rich house, into her rich, full life, leaving Gatsby—nothing. He felt married to her, that was all.</p>
+<p style="margin:0 0 12px;">When they met again, two days later, it was Gatsby who was breathless, who was, somehow, betrayed. Her porch was bright with the bought luxury of star-shine; the wicker of the settee squeaked fashionably as she turned toward him and he kissed her curious and lovely mouth. She had caught a cold, and it made her voice huskier and more charming than ever, and Gatsby was overwhelmingly aware of the youth and mystery that wealth imprisons and preserves, of the freshness of many clothes, and of Daisy, gleaming like silver, safe and proud above the hot struggles of the poor.</p>
+<p style="margin:0 0 12px;">“I can’t describe to you how surprised I was to find out I loved her, old sport. I even hoped for a while that she’d throw me over, but she didn’t, because she was in love with me too. She thought I knew a lot because I knew different things from her … Well, there I was, way off my ambitions, getting deeper in love every minute, and all of a sudden I didn’t care. What was the use of doing great things if I could have a better time telling her what I was going to do?”</p>
+<p style="margin:0 0 12px;">On the last afternoon before he went abroad, he sat with Daisy in his arms for a long, silent time. It was a cold fall day, with fire in the room and her cheeks flushed. Now and then she moved and he changed his arm a little, and once he kissed her dark shining hair. The afternoon had made them tranquil for a while, as if to give them a deep memory for the long parting the next day promised. They had never been closer in their month of love, nor communicated more profoundly one with another, than when she brushed silent lips against his coat’s shoulder or when he touched the end of her fingers, gently, as though she were asleep.</p>
+<p style="margin:0 0 12px;">He did extraordinarily well in the war. He was a captain before he went to the front, and following the Argonne battles he got his majority and the command of the divisional machine-guns. After the armistice he tried frantically to get home, but some complication or misunderstanding sent him to Oxford instead. He was worried now—there was a quality of nervous despair in Daisy’s letters. She didn’t see why he couldn’t come. She was feeling the pressure of the world outside, and she wanted to see him and feel his presence beside her and be reassured that she was doing the right thing after all.</p>
+<p style="margin:0 0 12px;">For Daisy was young and her artificial world was redolent of orchids and pleasant, cheerful snobbery and orchestras which set the rhythm of the year, summing up the sadness and suggestiveness of life in new tunes. All night the saxophones wailed the hopeless comment of the “Beale Street Blues” while a hundred pairs of golden and silver slippers shuffled the shining dust. At the grey tea hour there were always rooms that throbbed incessantly with this low, sweet fever, while fresh faces drifted here and there like rose petals blown by the sad horns around the floor.</p>
+<p style="margin:0 0 12px;">Through this twilight universe Daisy began to move again with the season; suddenly she was again keeping half a dozen dates a day with half a dozen men, and drowsing asleep at dawn with the beads and chiffon of an evening-dress tangled among dying orchids on the floor beside her bed. And all the time something within her was crying for a decision. She wanted her life shaped now, immediately—and the decision must be made by some force—of love, of money, of unquestionable practicality—that was close at hand.</p>
+<p style="margin:0 0 12px;">That force took shape in the middle of spring with the arrival of Tom Buchanan. There was a wholesome bulkiness about his person and his position, and Daisy was flattered. Doubtless there was a certain struggle and a certain relief. The letter reached Gatsby while he was still at Oxford.</p>
+<p style="margin:0 0 12px;">It was dawn now on Long Island and we went about opening the rest of the windows downstairs, filling the house with grey-turning, gold-turning light. The shadow of a tree fell abruptly across the dew and ghostly birds began to sing among the blue leaves. There was a slow, pleasant movement in the air, scarcely a wind, promising a cool, lovely day.</p>
+<p style="margin:0 0 12px;">“I don’t think she ever loved him.” Gatsby turned around from a window and looked at me challengingly. “You must remember, old sport, she was very excited this afternoon. He told her those things in a way that frightened her—that made it look as if I was some kind of cheap sharper. And the result was she hardly knew what she was saying.”</p>
+<p style="margin:0 0 12px;">He sat down gloomily.</p>
+<p style="margin:0 0 12px;">“Of course she might have loved him just for a minute, when they were first married—and loved me more even then, do you see?”</p>
+<p style="margin:0 0 12px;">Suddenly he came out with a curious remark.</p>
+<p style="margin:0 0 12px;">“In any case,” he said, “it was just personal.”</p>
+<p style="margin:0 0 12px;">What could you make of that, except to suspect some intensity in his conception of the affair that couldn’t be measured?</p>
+<p style="margin:0 0 12px;">He came back from France when Tom and Daisy were still on their wedding trip, and made a miserable but irresistible journey to Louisville on the last of his army pay. He stayed there a week, walking the streets where their footsteps had clicked together through the November night and revisiting the out-of-the-way places to which they had driven in her white car. Just as Daisy’s house had always seemed to him more mysterious and gay than other houses, so his idea of the city itself, even though she was gone from it, was pervaded with a melancholy beauty.</p>
+<p style="margin:0 0 12px;">He left feeling that if he had searched harder, he might have found her—that he was leaving her behind. The day-coach—he was penniless now—was hot. He went out to the open vestibule and sat down on a folding-chair, and the station slid away and the backs of unfamiliar buildings moved by. Then out into the spring fields, where a yellow trolley raced them for a minute with people in it who might once have seen the pale magic of her face along the casual street.</p>
+<p style="margin:0 0 12px;">The track curved and now it was going away from the sun, which, as it sank lower, seemed to spread itself in benediction over the vanishing city where she had drawn her breath. He stretched out his hand desperately as if to snatch only a wisp of air, to save a fragment of the spot that she had made lovely for him. But it was all going by too fast now for his blurred eyes and he knew that he had lost that part of it, the freshest and the best, forever.</p>
+<p style="margin:0 0 12px;">It was nine o’clock when we finished breakfast and went out on the porch. The night had made a sharp difference in the weather and there was an autumn flavour in the air. The gardener, the last one of Gatsby’s former servants, came to the foot of the steps.</p>
+<p style="margin:0 0 12px;">“I’m going to drain the pool today, Mr. Gatsby. Leaves’ll start falling pretty soon, and then there’s always trouble with the pipes.”</p>
+<p style="margin:0 0 12px;">“Don’t do it today,” Gatsby answered. He turned to me apologetically. “You know, old sport, I’ve never used that pool all summer?”</p>
+<p style="margin:0 0 12px;">I looked at my watch and stood up.</p>
+<p style="margin:0 0 12px;">“Twelve minutes to my train.”</p>
+<p style="margin:0 0 12px;">I didn’t want to go to the city. I wasn’t worth a decent stroke of work, but it was more than that—I didn’t want to leave Gatsby. I missed that train, and then another, before I could get myself away.</p>
+<p style="margin:0 0 12px;">“I’ll call you up,” I said finally.</p>
+<p style="margin:0 0 12px;">“Do, old sport.”</p>
+<p style="margin:0 0 12px;">“I’ll call you about noon.”</p>
+<p style="margin:0 0 12px;">We walked slowly down the steps.</p>
+<p style="margin:0 0 12px;">“I suppose Daisy’ll call too.” He looked at me anxiously, as if he hoped I’d corroborate this.</p>
+<p style="margin:0 0 12px;">“I suppose so.”</p>
+<p style="margin:0 0 12px;">“Well, goodbye.”</p>
+<p style="margin:0 0 12px;">We shook hands and I started away. Just before I reached the hedge I remembered something and turned around.</p>
+<p style="margin:0 0 12px;">“They’re a rotten crowd,” I shouted across the lawn. “You’re worth the whole damn bunch put together.”</p>
+<p style="margin:0 0 12px;">I’ve always been glad I said that. It was the only compliment I ever gave him, because I disapproved of him from beginning to end. First he nodded politely, and then his face broke into that radiant and understanding smile, as if we’d been in ecstatic cahoots on that fact all the time. His gorgeous pink rag of a suit made a bright spot of colour against the white steps, and I thought of the night when I first came to his ancestral home, three months before. The lawn and drive had been crowded with the faces of those who guessed at his corruption—and he had stood on those steps, concealing his incorruptible dream, as he waved them goodbye.</p>
+<p style="margin:0 0 12px;">I thanked him for his hospitality. We were always thanking him for that—I and the others.</p>
+<p style="margin:0 0 12px;">“Goodbye,” I called. “I enjoyed breakfast, Gatsby.”</p>
+<p style="margin:0 0 12px;">Up in the city, I tried for a while to list the quotations on an interminable amount of stock, then I fell asleep in my swivel-chair. Just before noon the phone woke me, and I started up with sweat breaking out on my forehead. It was Jordan Baker; she often called me up at this hour because the uncertainty of her own movements between hotels and clubs and private houses made her hard to find in any other way. Usually her voice came over the wire as something fresh and cool, as if a divot from a green golf-links had come sailing in at the office window, but this morning it seemed harsh and dry.</p>
+<p style="margin:0 0 12px;">“I’ve left Daisy’s house,” she said. “I’m at Hempstead, and I’m going down to Southampton this afternoon.”</p>
+<p style="margin:0 0 12px;">Probably it had been tactful to leave Daisy’s house, but the act annoyed me, and her next remark made me rigid.</p>
+<p style="margin:0 0 12px;">“You weren’t so nice to me last night.”</p>
+<p style="margin:0 0 12px;">“How could it have mattered then?”</p>
+<p style="margin:0 0 12px;">Silence for a moment. Then:</p>
+<p style="margin:0 0 12px;">“However—I want to see you.”</p>
+<p style="margin:0 0 12px;">“I want to see you, too.”</p>
+<p style="margin:0 0 12px;">“Suppose I don’t go to Southampton, and come into town this afternoon?”</p>
+<p style="margin:0 0 12px;">“No—I don’t think this afternoon.”</p>
+<p style="margin:0 0 12px;">“Very well.”</p>
+<p style="margin:0 0 12px;">“It’s impossible this afternoon. Various—”</p>
+<p style="margin:0 0 12px;">We talked like that for a while, and then abruptly we weren’t talking any longer. I don’t know which of us hung up with a sharp click, but I know I didn’t care. I couldn’t have talked to her across a tea-table that day if I never talked to her again in this world.</p>
+<p style="margin:0 0 12px;">I called Gatsby’s house a few minutes later, but the line was busy. I tried four times; finally an exasperated central told me the wire was being kept open for long distance from Detroit. Taking out my timetable, I drew a small circle around the three-fifty train. Then I leaned back in my chair and tried to think. It was just noon.</p>
+<p style="margin:0 0 12px;">When I passed the ash-heaps on the train that morning I had crossed deliberately to the other side of the car. I supposed there’d be a curious crowd around there all day with little boys searching for dark spots in the dust, and some garrulous man telling over and over what had happened, until it became less and less real even to him and he could tell it no longer, and Myrtle Wilson’s tragic achievement was forgotten. Now I want to go back a little and tell what happened at the garage after we left there the night before.</p>
+<p style="margin:0 0 12px;">They had difficulty in locating the sister, Catherine. She must have broken her rule against drinking that night, for when she arrived she was stupid with liquor and unable to understand that the ambulance had already gone to Flushing. When they convinced her of this, she immediately fainted, as if that was the intolerable part of the affair. Someone, kind or curious, took her in his car and drove her in the wake of her sister’s body.</p>
+<p style="margin:0 0 12px;">Until long after midnight a changing crowd lapped up against the front of the garage, while George Wilson rocked himself back and forth on the couch inside. For a while the door of the office was open, and everyone who came into the garage glanced irresistibly through it. Finally someone said it was a shame, and closed the door. Michaelis and several other men were with him; first, four or five men, later two or three men. Still later Michaelis had to ask the last stranger to wait there fifteen minutes longer, while he went back to his own place and made a pot of coffee. After that, he stayed there alone with Wilson until dawn.</p>
+<p style="margin:0 0 12px;">About three o’clock the quality of Wilson’s incoherent muttering changed—he grew quieter and began to talk about the yellow car. He announced that he had a way of finding out whom the yellow car belonged to, and then he blurted out that a couple of months ago his wife had come from the city with her face bruised and her nose swollen.</p>
+<p style="margin:0 0 12px;">But when he heard himself say this, he flinched and began to cry “Oh, my God!” again in his groaning voice. Michaelis made a clumsy attempt to distract him.</p>
+<p style="margin:0 0 12px;">“How long have you been married, George? Come on there, try and sit still a minute, and answer my question. How long have you been married?”</p>
+<p style="margin:0 0 12px;">“Twelve years.”</p>
+<p style="margin:0 0 12px;">“Ever had any children? Come on, George, sit still—I asked you a question. Did you ever have any children?”</p>
+<p style="margin:0 0 12px;">The hard brown beetles kept thudding against the dull light, and whenever Michaelis heard a car go tearing along the road outside it sounded to him like the car that hadn’t stopped a few hours before. He didn’t like to go into the garage, because the work bench was stained where the body had been lying, so he moved uncomfortably around the office—he knew every object in it before morning—and from time to time sat down beside Wilson trying to keep him more quiet.</p>
+<p style="margin:0 0 12px;">“Have you got a church you go to sometimes, George? Maybe even if you haven’t been there for a long time? Maybe I could call up the church and get a priest to come over and he could talk to you, see?”</p>
+<p style="margin:0 0 12px;">“Don’t belong to any.”</p>
+<p style="margin:0 0 12px;">“You ought to have a church, George, for times like this. You must have gone to church once. Didn’t you get married in a church? Listen, George, listen to me. Didn’t you get married in a church?”</p>
+<p style="margin:0 0 12px;">“That was a long time ago.”</p>
+<p style="margin:0 0 12px;">The effort of answering broke the rhythm of his rocking—for a moment he was silent. Then the same half-knowing, half-bewildered look came back into his faded eyes.</p>
+<p style="margin:0 0 12px;">“Look in the drawer there,” he said, pointing at the desk.</p>
+<p style="margin:0 0 12px;">“Which drawer?”</p>
+<p style="margin:0 0 12px;">“That drawer—that one.”</p>
+<p style="margin:0 0 12px;">Michaelis opened the drawer nearest his hand. There was nothing in it but a small, expensive dog-leash, made of leather and braided silver. It was apparently new.</p>
+<p style="margin:0 0 12px;">“This?” he inquired, holding it up.</p>
+<p style="margin:0 0 12px;">Wilson stared and nodded.</p>
+<p style="margin:0 0 12px;">“I found it yesterday afternoon. She tried to tell me about it, but I knew it was something funny.”</p>
+<p style="margin:0 0 12px;">“You mean your wife bought it?”</p>
+<p style="margin:0 0 12px;">“She had it wrapped in tissue paper on her bureau.”</p>
+<p style="margin:0 0 12px;">Michaelis didn’t see anything odd in that, and he gave Wilson a dozen reasons why his wife might have bought the dog-leash. But conceivably Wilson had heard some of these same explanations before, from Myrtle, because he began saying “Oh, my God!” again in a whisper—his comforter left several explanations in the air.</p>
+<p style="margin:0 0 12px;">“Then he killed her,” said Wilson. His mouth dropped open suddenly.</p>
+<p style="margin:0 0 12px;">“Who did?”</p>
+<p style="margin:0 0 12px;">“I have a way of finding out.”</p>
+<p style="margin:0 0 12px;">“You’re morbid, George,” said his friend. “This has been a strain to you and you don’t know what you’re saying. You’d better try and sit quiet till morning.”</p>
+<p style="margin:0 0 12px;">“He murdered her.”</p>
+<p style="margin:0 0 12px;">“It was an accident, George.”</p>
+<p style="margin:0 0 12px;">Wilson shook his head. His eyes narrowed and his mouth widened slightly with the ghost of a superior “Hm!”</p>
+<p style="margin:0 0 12px;">“I know,” he said definitely. “I’m one of these trusting fellas and I don’t think any harm to nobody, but when I get to know a thing I know it. It was the man in that car. She ran out to speak to him and he wouldn’t stop.”</p>
+<p style="margin:0 0 12px;">Michaelis had seen this too, but it hadn’t occurred to him that there was any special significance in it. He believed that Mrs. Wilson had been running away from her husband, rather than trying to stop any particular car.</p>
+<p style="margin:0 0 12px;">“How could she of been like that?”</p>
+<p style="margin:0 0 12px;">“She’s a deep one,” said Wilson, as if that answered the question. “Ah-h-h—”</p>
+<p style="margin:0 0 12px;">He began to rock again, and Michaelis stood twisting the leash in his hand.</p>
+<p style="margin:0 0 12px;">“Maybe you got some friend that I could telephone for, George?”</p>
+<p style="margin:0 0 12px;">This was a forlorn hope—he was almost sure that Wilson had no friend: there was not enough of him for his wife. He was glad a little later when he noticed a change in the room, a blue quickening by the window, and realized that dawn wasn’t far off. About five o’clock it was blue enough outside to snap off the light.</p>
+<p style="margin:0 0 12px;">Wilson’s glazed eyes turned out to the ash-heaps, where small grey clouds took on fantastic shapes and scurried here and there in the faint dawn wind.</p>
+<p style="margin:0 0 12px;">“I spoke to her,” he muttered, after a long silence. “I told her she might fool me but she couldn’t fool God. I took her to the window”—with an effort he got up and walked to the rear window and leaned with his face pressed against it—“and I said ‘God knows what you’ve been doing, everything you’ve been doing. You may fool me, but you can’t fool God!’ ”</p>
+<p style="margin:0 0 12px;">Standing behind him, Michaelis saw with a shock that he was looking at the eyes of Doctor T. J. Eckleburg, which had just emerged, pale and enormous, from the dissolving night.</p>
+<p style="margin:0 0 12px;">“God sees everything,” repeated Wilson.</p>
+<p style="margin:0 0 12px;">“That’s an advertisement,” Michaelis assured him. Something made him turn away from the window and look back into the room. But Wilson stood there a long time, his face close to the window pane, nodding into the twilight.</p>
+<p style="margin:0 0 12px;">By six o’clock Michaelis was worn out, and grateful for the sound of a car stopping outside. It was one of the watchers of the night before who had promised to come back, so he cooked breakfast for three, which he and the other man ate together. Wilson was quieter now, and Michaelis went home to sleep; when he awoke four hours later and hurried back to the garage, Wilson was gone.</p>
+<p style="margin:0 0 12px;">His movements—he was on foot all the time—were afterward traced to Port Roosevelt and then to Gad’s Hill, where he bought a sandwich that he didn’t eat, and a cup of coffee. He must have been tired and walking slowly, for he didn’t reach Gad’s Hill until noon. Thus far there was no difficulty in accounting for his time—there were boys who had seen a man “acting sort of crazy,” and motorists at whom he stared oddly from the side of the road. Then for three hours he disappeared from view. The police, on the strength of what he said to Michaelis, that he “had a way of finding out,” supposed that he spent that time going from garage to garage thereabout, inquiring for a yellow car. On the other hand, no garage man who had seen him ever came forward, and perhaps he had an easier, surer way of finding out what he wanted to know. By half-past two he was in West Egg, where he asked someone the way to Gatsby’s house. So by that time he knew Gatsby’s name.</p>
+<p style="margin:0 0 12px;">At two o’clock Gatsby put on his bathing-suit and left word with the butler that if anyone phoned word was to be brought to him at the pool. He stopped at the garage for a pneumatic mattress that had amused his guests during the summer, and the chauffeur helped him to pump it up. Then he gave instructions that the open car wasn’t to be taken out under any circumstances—and this was strange, because the front right fender needed repair.</p>
+<p style="margin:0 0 12px;">Gatsby shouldered the mattress and started for the pool. Once he stopped and shifted it a little, and the chauffeur asked him if he needed help, but he shook his head and in a moment disappeared among the yellowing trees.</p>
+<p style="margin:0 0 12px;">No telephone message arrived, but the butler went without his sleep and waited for it until four o’clock—until long after there was anyone to give it to if it came. I have an idea that Gatsby himself didn’t believe it would come, and perhaps he no longer cared. If that was true he must have felt that he had lost the old warm world, paid a high price for living too long with a single dream. He must have looked up at an unfamiliar sky through frightening leaves and shivered as he found what a grotesque thing a rose is and how raw the sunlight was upon the scarcely created grass. A new world, material without being real, where poor ghosts, breathing dreams like air, drifted fortuitously about … like that ashen, fantastic figure gliding toward him through the amorphous trees.</p>
+<p style="margin:0 0 12px;">The chauffeur—he was one of Wolfshiem’s protégés—heard the shots—afterwards he could only say that he hadn’t thought anything much about them. I drove from the station directly to Gatsby’s house and my rushing anxiously up the front steps was the first thing that alarmed anyone. But they knew then, I firmly believe. With scarcely a word said, four of us, the chauffeur, butler, gardener, and I hurried down to the pool.</p>
+<p style="margin:0 0 12px;">There was a faint, barely perceptible movement of the water as the fresh flow from one end urged its way toward the drain at the other. With little ripples that were hardly the shadows of waves, the laden mattress moved irregularly down the pool. A small gust of wind that scarcely corrugated the surface was enough to disturb its accidental course with its accidental burden. The touch of a cluster of leaves revolved it slowly, tracing, like the leg of transit, a thin red circle in the water.</p>
+<p style="margin:0 0 12px;">It was after we started with Gatsby toward the house that the gardener saw Wilson’s body a little way off in the grass, and the holocaust was complete.</p><p style="font-size:12px;color:#3B4E8C;margin-top:14px;">F. Scott Fitzgerald, <em>The Great Gatsby</em> (1925; public domain; Project Gutenberg eBook #64317)</p></div></details></div>
+    </div>
+    <!-- ===== PART ===== -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; GATSBY’S ACCOUNT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Through the night Gatsby tells Nick how he met Daisy. Nick states what the account shows: a pursuit that has become a mission.</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">But he didn’t despise himself and it didn’t turn out as he had imagined. He had intended, probably, to take what he could and go—but now he found that he had committed himself to the following of a grail.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Nick, Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">She vanished into her rich house, into her rich, full life, leaving Gatsby—nothing. He felt married to her, that was all.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Nick, Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Gatsby’s last comment on the afternoon at the Plaza closes off any other reading. Nick records it and then comments.</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">“In any case,” he said, “it was just personal.” What could you make of that, except to suspect some intensity in his conception of the affair that couldn’t be measured?</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When a character sees a symbol in a story, who decides what it means?</div>
+            <div class="widget-options">
+                <button data-response="A character’s reading shows the character. Wilson’s reading in this chapter shows what grief and certainty do to a man.">&#128100; The character who sees it</button>
+                <button data-response="Nick reports both readings of the eyes. He does not say which is correct, which is part of how the scene works.">&#128214; The narrator who reports it</button>
+                <button data-response="This is closest to the chapter’s method. The text gives two readings and the reader decides what the eyes can carry.">&#128161; The reader who weighs it</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+    </div>
+    <!-- ===== PART ===== -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WILSON AND THE EYES</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">George Wilson spends the night in the garage with Michaelis. Wilson believes the driver of the yellow car killed his wife, and at dawn he turns to the window.</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">“I told her she might fool me but she couldn’t fool God.” ... Standing behind him, Michaelis saw with a shock that he was looking at the eyes of Doctor T. J. Eckleburg, which had just emerged, pale and enormous, from the dissolving night. “God sees everything,” repeated Wilson. “That’s an advertisement,” Michaelis assured him.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The eyes were introduced earlier, in the valley of ashes, as part of a sign. Wilson reads them as divine watching. Michaelis reads them as what they are, an advertisement. Nick reports both without choosing, so the symbol reflects its viewers: grief reads judgment into it, and a practical man reads commerce.</p>
+
+    </div>
+    <!-- ===== PART ===== -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; TWO DAYS, ONE POOL</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The chapter then follows two men through one day. Nick assembles the sequence from what others told him.</p>
+        <div style="background: #FFFDF7; border: 1px solid #E7D6AE; border-radius: 8px; padding: 20px 22px; margin: 6px 0 16px 0;">
+            <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px; letter-spacing: 0.4px;">&#128221; TWO TIMELINES, ONE POOL</div>
+            <div style="display:flex; flex-wrap:wrap; gap:18px;">
+                <div style="flex:1; min-width:260px; border-left:3px solid #3B4E8C; padding-left:12px;"><div style="font-size:13px; color:#3B4E8C; letter-spacing:0.3px;"><strong>WILSON</strong></div><div style="font-size:15px; color:#1a2340; line-height:1.55;">Near dawn, at the window. <span class="pd-quote" data-src="gatsby">he didn’t reach Gad’s Hill until noon</span>. <span class="pd-quote" data-src="gatsby">By half-past two he was in West Egg, where he asked someone the way to Gatsby’s house.</span></div></div>
+                <div style="flex:1; min-width:260px; border-left:3px solid #C7922C; padding-left:12px;"><div style="font-size:13px; color:#C7922C; letter-spacing:0.3px;"><strong>GATSBY</strong></div><div style="font-size:15px; color:#1a2340; line-height:1.55;">At nine o’clock he tells the gardener not to drain the pool. <span class="pd-quote" data-src="gatsby">At two o’clock Gatsby put on his bathing-suit</span> and goes to the pool. The butler waits for a telephone call <span class="pd-quote" data-src="gatsby">until four o’clock</span>.</div></div>
+            </div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Nick did not see the shooting. He gives his account in the language of inference, and the hedges mark the boundary.</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">I have an idea that Gatsby himself didn’t believe it would come, and perhaps he no longer cared. If that was true he must have felt that he had lost the old warm world, paid a high price for living too long with a single dream.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Nick, Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">A new world, material without being real, where poor ghosts, breathing dreams like air, drifted fortuitously about … like that ashen, fantastic figure gliding toward him through the amorphous trees.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Nick, Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">“I have an idea” and “must have felt” mark inference. The chauffeur heard the shots, and Nick saw the bodies afterward with the staff. The rest is Nick’s reconstruction, and the ghostly language shows how he imagines the moment.</p>
+
+    </div>
+    <!-- ===== PART ===== -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 4 &middot; THE CROWD AND THE COMPLIMENT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Before the end, Nick says goodbye to Gatsby across the lawn. His remark is the nearest he comes to praise.</p>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">“They’re a rotten crowd,” I shouted across the lawn. “You’re worth the whole damn bunch put together.”</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Nick, Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <blockquote class="pd-quote" data-src="gatsby" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">I’ve always been glad I said that. It was the only compliment I ever gave him, because I disapproved of him from beginning to end.</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Nick, Fitzgerald, <em>The Great Gatsby</em>, Chapter 8 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The “crowd” is the community that used Gatsby’s house and will not come when he dies. Nick praises the man against the crowd while holding to his disapproval of the life.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; READING THE CHAPTER</div>
+            <div class="widget-question">Choose the reading the text supports.</div>
+            <div class="widget-row" data-correct="0" data-fb="Right. Nick records Wilson’s reading and Michaelis’s correction in adjacent lines and gives neither the last word. The reader weighs what the eyes can carry." data-hint="Ask who is speaking each line and what Nick adds. Does he say which reading is right, or does he only report them?">
+                <div class="widget-row-prompt">1. Wilson says “God sees everything” while looking at the eyes of Doctor T. J. Eckleburg. Michaelis answers “That’s an advertisement.” How should a reader treat the two readings?</div>
+                <div class="widget-options">
+                    <button data-choice="0">As two interpretations, which the narrator reports and does not endorse.</button>
+                    <button data-choice="1">As proof that the eyes mean nothing, since Michaelis names what they actually are.</button>
+                    <button data-choice="2">As proof that the novel states that God is watching, since Wilson says so aloud.</button>
+                    <button data-choice="3">As a test of which of the two men is the more reliable witness to events.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="3" data-fb="Right. “I have an idea” and “must have” mark the sentence as Nick’s reconstruction. Nick arrives after the shots and learns the facts from the staff." data-hint="Look at the words that introduce the sentence, and at the paragraph just before it. Who was at the pool, and where was Nick?">
+                <div class="widget-row-prompt">2. Nick writes that Gatsby “must have felt” he had “lost the old warm world.” What kind of statement is this?</div>
+                <div class="widget-options">
+                    <button data-choice="0">A report of Gatsby’s last words, given by the chauffeur afterward.</button>
+                    <button data-choice="1">A fact that Gatsby told Nick directly during the long night.</button>
+                    <button data-choice="2">A quotation from the butler about what Gatsby did that afternoon.</button>
+                    <button data-choice="3">Nick’s inference about a death he did not see.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="1" data-fb="Right. The next paragraph says it was the only compliment he gave and that he disapproved of Gatsby “from beginning to end.” The praise and the disapproval coexist." data-hint="Read the sentences that follow the compliment. Nick states what he thinks of Gatsby overall. Check whether the option agrees with that statement.">
+                <div class="widget-row-prompt">3. What does Nick’s compliment “You’re worth the whole damn bunch put together” show about his view of Gatsby?</div>
+                <div class="widget-options">
+                    <button data-choice="0">He admires everything about Gatsby’s life and conduct, without reservation.</button>
+                    <button data-choice="1">He sets Gatsby above the guests while still disapproving of him.</button>
+                    <button data-choice="2">He is mocking Gatsby with an exaggerated compliment he does not mean.</button>
+                    <button data-choice="3">He has changed his mind about the real source of Gatsby’s money.</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128273; KEY TERMS</div>
+        <div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>Inference</strong></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">A conclusion drawn from evidence; Nick marks the death scene as inference.</div></div>
+        <div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>Symbol</strong></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">An object that carries meaning, here the eyes read in two ways.</div></div>
+        <div class="ws-card"><div style="font-size: 18px; color: #0e1c42;"><strong>Narrator’s limits</strong></div><div style="font-size: 15px; color: #1a2340; margin-top: 4px; line-height: 1.5;">What a first-person narrator can know: what he saw, what others told him, and what he supposes.</div></div>
+
+    </div>
+
+</div>
+<!-- ===== /BODY WRAPPER ===== -->
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH 2 &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Week 6 &middot; The Death of Gatsby</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

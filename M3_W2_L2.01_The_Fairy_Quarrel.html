@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="optima:standards:fl-best" content="ELA.10.R.1.1; ELA.10.R.1.2" />
+<meta name="optima:standards:tx-teks" content="TEKS 110.37(c)(6)(A); TEKS 110.37(c)(6)(C)" />
+<title>English 2 &middot; The Fairy Quarrel</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    /* ===== WIDGET CSS (recolored to the ELA gold/indigo palette; no green/teal) ===== */
+    .optima-widget { background: linear-gradient(135deg, #EEF1F8 0%, #F4F6FA 100%); border: 1px solid #C7D0E5; border-left: 5px solid #3B4E8C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #3B4E8C; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; text-align: left; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #3B4E8C; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #FDF3E3; border-color: #C7922C; color: #7A5A17; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #FDF3E3; border-left: 3px solid #C7922C; color: #7A5A17; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH 2</div>
+    <div style="font-size: 18px; color: #55c8e8;">Quarter 3 &middot; Module 3: A Midsummer Night&rsquo;s Dream, Law, Desire, and the Restored Order &middot; Week 2 &middot; Literature</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #1a2340;">A Midsummer Night&rsquo;s Dream</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Week</div>
+        <div style="font-size: 17px; color: #0e1c42;">Week 2</div>
+        <div style="font-size: 12px; color: #1a2340;">Literature</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">A Midsummer Night&rsquo;s Dream</div>
+        <div style="font-size: 12px; color: #1a2340;">William Shakespeare (public domain)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Law, Desire, and the Restored Order</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+
+<!-- ═══ OPTIMA READ-ALOUD PLAYER ═══ -->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD &mdash; LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Week 2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Fairy Quarrel</div>
+        <div style="font-size: 16px; color: #1a2340;">Literature &middot; Week 2</div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128214; TODAY&rsquo;S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The scene moves to the wood, where the rulers of the fairies are at war.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Titania&rsquo;s long speech traces the quarrel with Oberon through the weather, the farms, and the seasons. The speech makes one claim: when rulers are in discord, the community that depends on them suffers.</div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">I can state the cause of the quarrel between Oberon and Titania.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">I can trace the chain of effects Titania attributes to the quarrel.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">I can explain what the speech says about rulers and the natural community that depends on them.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; READING</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Read Act 2, Scene 1. Full text: <a href="https://www.gutenberg.org/ebooks/1514" style="color:#3B4E8C;">Gutenberg eBook #1514</a>.</div>
+        </div>
+        <div class="embed-reading" data-src="mnd" data-part="2.1"><details class="embed-reading-panel" data-ra-skip style="border:1px solid #D0D9E8;border-left:5px solid #C7922C;border-radius:8px;margin:16px 0;background:#FFFFFF;"><summary style="cursor:pointer;padding:12px 16px;font-size:14px;color:#0E1C42;background:#FDF3E3;border-radius:6px;"><strong>&#128214; Read the full text: A Midsummer Night&rsquo;s Dream, Act 2, Scene 1</strong></summary><div style="padding:16px 20px;font-size:15px;line-height:1.65;color:#1a2340;max-height:560px;overflow-y:auto;"><p style="font-size:13px;color:#3B4E8C;letter-spacing:0.4px;margin:0 0 12px;"><strong>SCENE I. A wood near Athens</strong></p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter a Fairy at one door, and Puck at another.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>How now, spirit! Whither wander you?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">FAIRY</strong><br>Over hill, over dale,<br>Thorough bush, thorough brier,<br>Over park, over pale,<br>Thorough flood, thorough fire,<br>I do wander everywhere,<br>Swifter than the moon’s sphere;<br>And I serve the Fairy Queen,<br>To dew her orbs upon the green.<br>The cowslips tall her pensioners be,<br>In their gold coats spots you see;<br>Those be rubies, fairy favours,<br>In those freckles live their savours.<br>I must go seek some dew-drops here,<br>And hang a pearl in every cowslip’s ear.<br>Farewell, thou lob of spirits; I’ll be gone.<br>Our Queen and all her elves come here anon.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>The King doth keep his revels here tonight;<br>Take heed the Queen come not within his sight,<br>For Oberon is passing fell and wrath,<br>Because that she, as her attendant, hath<br>A lovely boy, stol’n from an Indian king;<br>She never had so sweet a changeling.<br>And jealous Oberon would have the child<br>Knight of his train, to trace the forests wild:<br>But she perforce withholds the lovèd boy,<br>Crowns him with flowers, and makes him all her joy.<br>And now they never meet in grove or green,<br>By fountain clear, or spangled starlight sheen,<br>But they do square; that all their elves for fear<br>Creep into acorn cups, and hide them there.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">FAIRY</strong><br>Either I mistake your shape and making quite,<br>Or else you are that shrewd and knavish sprite<br>Call’d Robin Goodfellow. Are not you he<br>That frights the maidens of the villagery,<br>Skim milk, and sometimes labour in the quern,<br>And bootless make the breathless housewife churn,<br>And sometime make the drink to bear no barm,<br>Mislead night-wanderers, laughing at their harm?<br>Those that Hobgoblin call you, and sweet Puck,<br>You do their work, and they shall have good luck.<br>Are not you he?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>Thou speak’st aright;<br>I am that merry wanderer of the night.<br>I jest to Oberon, and make him smile,<br>When I a fat and bean-fed horse beguile,<br>Neighing in likeness of a filly foal;<br>And sometime lurk I in a gossip’s bowl<br>In very likeness of a roasted crab,<br>And, when she drinks, against her lips I bob,<br>And on her withered dewlap pour the ale.<br>The wisest aunt, telling the saddest tale,<br>Sometime for three-foot stool mistaketh me;<br>Then slip I from her bum, down topples she,<br>And ‘tailor’ cries, and falls into a cough;<br>And then the whole quire hold their hips and loffe<br>And waxen in their mirth, and neeze, and swear<br>A merrier hour was never wasted there.<br>But room, fairy. Here comes Oberon.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">FAIRY</strong><br>And here my mistress. Would that he were gone!</p>
+<p style="margin:0 0 10px;">Enter Oberon at one door, with his Train, and Titania at another, with<br>hers.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Ill met by moonlight, proud Titania.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>What, jealous Oberon! Fairies, skip hence;<br>I have forsworn his bed and company.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Tarry, rash wanton; am not I thy lord?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>Then I must be thy lady; but I know<br>When thou hast stol’n away from fairyland,<br>And in the shape of Corin sat all day<br>Playing on pipes of corn, and versing love<br>To amorous Phillida. Why art thou here,<br>Come from the farthest steep of India,<br>But that, forsooth, the bouncing Amazon,<br>Your buskin’d mistress and your warrior love,<br>To Theseus must be wedded; and you come<br>To give their bed joy and prosperity?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>How canst thou thus, for shame, Titania,<br>Glance at my credit with Hippolyta,<br>Knowing I know thy love to Theseus?<br>Didst not thou lead him through the glimmering night<br>From Perigenia, whom he ravished?<br>And make him with fair Aegles break his faith,<br>With Ariadne and Antiopa?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>These are the forgeries of jealousy:<br>And never, since the middle summer’s spring,<br>Met we on hill, in dale, forest, or mead,<br>By pavèd fountain, or by rushy brook,<br>Or on the beachèd margent of the sea,<br>To dance our ringlets to the whistling wind,<br>But with thy brawls thou hast disturb’d our sport.<br>Therefore the winds, piping to us in vain,<br>As in revenge, have suck’d up from the sea<br>Contagious fogs; which, falling in the land,<br>Hath every pelting river made so proud<br>That they have overborne their continents.<br>The ox hath therefore stretch’d his yoke in vain,<br>The ploughman lost his sweat, and the green corn<br>Hath rotted ere his youth attain’d a beard.<br>The fold stands empty in the drownèd field,<br>And crows are fatted with the murrion flock;<br>The nine-men’s-morris is fill’d up with mud,<br>And the quaint mazes in the wanton green,<br>For lack of tread, are undistinguishable.<br>The human mortals want their winter here.<br>No night is now with hymn or carol blest.<br>Therefore the moon, the governess of floods,<br>Pale in her anger, washes all the air,<br>That rheumatic diseases do abound.<br>And thorough this distemperature we see<br>The seasons alter: hoary-headed frosts<br>Fall in the fresh lap of the crimson rose;<br>And on old Hiems’ thin and icy crown<br>An odorous chaplet of sweet summer buds<br>Is, as in mockery, set. The spring, the summer,<br>The childing autumn, angry winter, change<br>Their wonted liveries; and the mazed world,<br>By their increase, now knows not which is which.<br>And this same progeny of evils comes<br>From our debate, from our dissension;<br>We are their parents and original.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Do you amend it, then. It lies in you.<br>Why should Titania cross her Oberon?<br>I do but beg a little changeling boy<br>To be my henchman.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>Set your heart at rest;<br>The fairyland buys not the child of me.<br>His mother was a vot’ress of my order,<br>And in the spicèd Indian air, by night,<br>Full often hath she gossip’d by my side;<br>And sat with me on Neptune’s yellow sands,<br>Marking th’ embarkèd traders on the flood,<br>When we have laugh’d to see the sails conceive,<br>And grow big-bellied with the wanton wind;<br>Which she, with pretty and with swimming gait<br>Following (her womb then rich with my young squire),<br>Would imitate, and sail upon the land,<br>To fetch me trifles, and return again,<br>As from a voyage, rich with merchandise.<br>But she, being mortal, of that boy did die;<br>And for her sake do I rear up her boy,<br>And for her sake I will not part with him.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>How long within this wood intend you stay?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>Perchance till after Theseus’ wedding-day.<br>If you will patiently dance in our round,<br>And see our moonlight revels, go with us;<br>If not, shun me, and I will spare your haunts.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Give me that boy and I will go with thee.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">TITANIA</strong><br>Not for thy fairy kingdom. Fairies, away.<br>We shall chide downright if I longer stay.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Titania with her Train.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Well, go thy way. Thou shalt not from this grove<br>Till I torment thee for this injury.—<br>My gentle Puck, come hither. Thou rememb’rest<br>Since once I sat upon a promontory,<br>And heard a mermaid on a dolphin’s back<br>Uttering such dulcet and harmonious breath<br>That the rude sea grew civil at her song<br>And certain stars shot madly from their spheres<br>To hear the sea-maid’s music.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>I remember.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>That very time I saw, (but thou couldst not),<br>Flying between the cold moon and the earth,<br>Cupid all arm’d: a certain aim he took<br>At a fair vestal, thronèd by the west,<br>And loos’d his love-shaft smartly from his bow<br>As it should pierce a hundred thousand hearts.<br>But I might see young Cupid’s fiery shaft<br>Quench’d in the chaste beams of the watery moon;<br>And the imperial votress passed on,<br>In maiden meditation, fancy-free.<br>Yet mark’d I where the bolt of Cupid fell:<br>It fell upon a little western flower,<br>Before milk-white, now purple with love’s wound,<br>And maidens call it love-in-idleness.<br>Fetch me that flower, the herb I showed thee once:<br>The juice of it on sleeping eyelids laid<br>Will make or man or woman madly dote<br>Upon the next live creature that it sees.<br>Fetch me this herb, and be thou here again<br>Ere the leviathan can swim a league.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>I’ll put a girdle round about the earth<br>In forty minutes.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Puck.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Having once this juice,<br>I’ll watch Titania when she is asleep,<br>And drop the liquor of it in her eyes:<br>The next thing then she waking looks upon<br>(Be it on lion, bear, or wolf, or bull,<br>On meddling monkey, or on busy ape)<br>She shall pursue it with the soul of love.<br>And ere I take this charm from off her sight<br>(As I can take it with another herb)<br>I’ll make her render up her page to me.<br>But who comes here? I am invisible;<br>And I will overhear their conference.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Demetrius, Helena following him.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>I love thee not, therefore pursue me not.<br>Where is Lysander and fair Hermia?<br>The one I’ll slay, the other slayeth me.<br>Thou told’st me they were stol’n into this wood,<br>And here am I, and wode within this wood<br>Because I cannot meet with Hermia.<br>Hence, get thee gone, and follow me no more.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>You draw me, you hard-hearted adamant,<br>But yet you draw not iron, for my heart<br>Is true as steel. Leave you your power to draw,<br>And I shall have no power to follow you.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Do I entice you? Do I speak you fair?<br>Or rather do I not in plainest truth<br>Tell you I do not, nor I cannot love you?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>And even for that do I love you the more.<br>I am your spaniel; and, Demetrius,<br>The more you beat me, I will fawn on you.<br>Use me but as your spaniel, spurn me, strike me,<br>Neglect me, lose me; only give me leave,<br>Unworthy as I am, to follow you.<br>What worser place can I beg in your love,<br>(And yet a place of high respect with me)<br>Than to be usèd as you use your dog?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>Tempt not too much the hatred of my spirit;<br>For I am sick when I do look on thee.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>And I am sick when I look not on you.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>You do impeach your modesty too much<br>To leave the city and commit yourself<br>Into the hands of one that loves you not,<br>To trust the opportunity of night<br>And the ill counsel of a desert place,<br>With the rich worth of your virginity.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>Your virtue is my privilege: for that<br>It is not night when I do see your face,<br>Therefore I think I am not in the night;<br>Nor doth this wood lack worlds of company,<br>For you, in my respect, are all the world.<br>Then how can it be said I am alone<br>When all the world is here to look on me?</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>I’ll run from thee and hide me in the brakes,<br>And leave thee to the mercy of wild beasts.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>The wildest hath not such a heart as you.<br>Run when you will, the story shall be chang’d;<br>Apollo flies, and Daphne holds the chase;<br>The dove pursues the griffin, the mild hind<br>Makes speed to catch the tiger. Bootless speed,<br>When cowardice pursues and valour flies!</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">DEMETRIUS</strong><br>I will not stay thy questions. Let me go,<br>Or if thou follow me, do not believe<br>But I shall do thee mischief in the wood.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">HELENA</strong><br>Ay, in the temple, in the town, the field,<br>You do me mischief. Fie, Demetrius!<br>Your wrongs do set a scandal on my sex.<br>We cannot fight for love as men may do.<br>We should be woo’d, and were not made to woo.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Demetrius.]</p>
+<p style="margin:0 0 10px;">I’ll follow thee, and make a heaven of hell,<br>To die upon the hand I love so well.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exit Helena.]</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>Fare thee well, nymph. Ere he do leave this grove,<br>Thou shalt fly him, and he shall seek thy love.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">Enter Puck.</p>
+<p style="margin:0 0 10px;">Hast thou the flower there? Welcome, wanderer.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>Ay, there it is.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">OBERON</strong><br>I pray thee give it me.<br>I know a bank where the wild thyme blows,<br>Where oxlips and the nodding violet grows,<br>Quite over-canopied with luscious woodbine,<br>With sweet musk-roses, and with eglantine.<br>There sleeps Titania sometime of the night,<br>Lull’d in these flowers with dances and delight;<br>And there the snake throws her enamell’d skin,<br>Weed wide enough to wrap a fairy in.<br>And with the juice of this I’ll streak her eyes,<br>And make her full of hateful fantasies.<br>Take thou some of it, and seek through this grove:<br>A sweet Athenian lady is in love<br>With a disdainful youth. Anoint his eyes;<br>But do it when the next thing he espies<br>May be the lady. Thou shalt know the man<br>By the Athenian garments he hath on.<br>Effect it with some care, that he may prove<br>More fond on her than she upon her love:<br>And look thou meet me ere the first cock crow.</p>
+<p style="margin:0 0 10px;"><strong style="color:#0E1C42;letter-spacing:0.5px;font-size:13px;">PUCK</strong><br>Fear not, my lord, your servant shall do so.</p>
+<p style="margin:6px 0 10px;font-style:italic;color:#3B4E8C;">[Exeunt.]</p><p style="font-size:12px;color:#3B4E8C;margin-top:14px;">William Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em> (public domain; Project Gutenberg eBook #1514)</p></div></details></div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE CAUSE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Puck explains the quarrel to a fairy before the rulers enter. Titania has taken in a human child and will not give him up. Oberon wants him as an attendant:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;For Oberon is passing fell and wrath,<br>Because that she, as her attendant, hath<br>A lovely boy, stol&rsquo;n from an Indian king;<br>She never had so sweet a changeling.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When the two rulers meet, the argument is already old. Oberon opens with a greeting that is an accusation:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Ill met by moonlight, proud Titania.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 0;">Each charges the other with an affair, with Hippolyta on one side and with Theseus on the other. Titania calls the charges by a name that dismisses them: &ldquo;the forgeries of jealousy.&rdquo; The real dispute is the boy, and neither side will move.</p>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE SPEECH</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Titania&rsquo;s answer is a single extended speech. It begins by saying the quarrel has spoiled every gathering of the fairies:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;These are the forgeries of jealousy:<br>And never, since the middle summer&rsquo;s spring,<br>Met we on hill, in dale, forest, or mead,<br>By pav&egrave;d fountain, or by rushy brook,<br>Or on the beach&egrave;d margent of the sea,<br>To dance our ringlets to the whistling wind,<br>But with thy brawls thou hast disturb&rsquo;d our sport.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then the effects spread outward. The winds, driven away from the fairies&rsquo; dances, pull moisture out of the sea, and the rivers flood:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Therefore the winds, piping to us in vain,<br>As in revenge, have suck&rsquo;d up from the sea<br>Contagious fogs; which, falling in the land,<br>Hath every pelting river made so proud<br>That they have overborne their continents.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The flood reaches the farm:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;The ox hath therefore stretch&rsquo;d his yoke in vain,<br>The ploughman lost his sweat, and the green corn<br>Hath rotted ere his youth attain&rsquo;d a beard.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Finally the seasons themselves lose their order:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;And thorough this distemperature we see<br>The seasons alter: hoary-headed frosts<br>Fall in the fresh lap of the crimson rose;&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <div style="background: #FFFDF7; border: 1px solid #E7D6AE; border-radius: 8px; padding: 20px 22px; margin: 6px 0 16px 0;">
+            <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px; letter-spacing: 0.4px;">&#127786; HOW A QUARREL BECOMES WEATHER &middot; TITANIA&rsquo;S CHAIN OF CAUSES</div>
+<div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:5px solid #3B4E8C; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5;"><strong>The rulers quarrel.</strong> Titania says the winds, &ldquo;piping to us in vain,&rdquo; take revenge.</div><div style="text-align:center; font-size:20px; color:#C7922C; line-height:1;">&#8595;</div><div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:5px solid #3B4E8C; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5;"><strong>The winds pull fog from the sea.</strong> <span class="pd-quote" data-src="mnd">Contagious fogs</span></div><div style="text-align:center; font-size:20px; color:#C7922C; line-height:1;">&#8595;</div><div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:5px solid #3B4E8C; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5;"><strong>The rivers overflow.</strong> <span class="pd-quote" data-src="mnd">Hath every pelting river made so proud</span></div><div style="text-align:center; font-size:20px; color:#C7922C; line-height:1;">&#8595;</div><div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:5px solid #3B4E8C; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5;"><strong>The farm work is lost.</strong> <span class="pd-quote" data-src="mnd">The ploughman lost his sweat</span></div><div style="text-align:center; font-size:20px; color:#C7922C; line-height:1;">&#8595;</div><div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:5px solid #3B4E8C; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5;"><strong>The seasons trade places.</strong> <span class="pd-quote" data-src="mnd">The seasons alter</span></div><div style="text-align:center; font-size:20px; color:#C7922C; line-height:1;">&#8595;</div><div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:5px solid #3B4E8C; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5;"><strong>The world loses its order.</strong> <span class="pd-quote" data-src="mnd">now knows not which is which</span></div><div style="font-size:14px; color:#1a2340; margin-top:10px;">Every link is one Titania names in the speech. Her conclusion: &ldquo;We are their parents and original.&rdquo;</div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Titania ends by giving the rulers the blame:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;And this same progeny of evils comes<br>From our debate, from our dissension;<br>We are their parents and original.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 0;">&ldquo;Parents and original&rdquo; makes the rulers the source. The speech does not blame the weather or the winds. A quarrel between two sovereigns reaches the ploughman, the grain, and the sheepfold, none of whom took part in it.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; FIRST READ</div>
+            <div class="widget-question">Titania says the quarrel is the source of the disorder. Who is responsible for it?</div>
+            <div class="widget-options">
+                <button data-response="The refusal is the stated cause in Puck&amp;rsquo;s account. But Titania&amp;rsquo;s own words in the speech assign the cause to both rulers.">Titania, because she refuses to give up the boy.</button>
+                <button data-response="His demand starts the quarrel in this scene, but Titania&amp;rsquo;s speech does not name him alone. Reread her last three lines.">Oberon, because he began the dispute by demanding the boy.</button>
+                <button data-response="That is the text&amp;rsquo;s own answer. Titania uses &amp;lsquo;we&amp;rsquo; and &amp;lsquo;our&amp;rsquo; for the quarrel, so the speech shares the blame.">Both rulers, as Titania says: &lsquo;We are their parents and original.&rsquo;</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; THE RULERS&rsquo; REPLY</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Oberon&rsquo;s answer to the speech accepts none of it. He puts the remedy in Titania&rsquo;s hands:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;Do you amend it, then. It lies in you.<br>Why should Titania cross her Oberon?<br>I do but beg a little changeling boy<br>To be my henchman.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The demand is small in his own telling, a boy to be a henchman, but the effect of refusal is large and he treats the larger harm as her responsibility. Titania&rsquo;s reason for refusing is loyalty. The boy&rsquo;s mother was one of her order and died in childbirth:</p>
+        <blockquote class="pd-quote" data-src="mnd" style="margin: 0 0 12px 0; padding: 12px 20px; background: #F4F6FA; border-left: 4px solid #C7922C; border-radius: 4px; font-size: 18px; color: #0e1c42; line-height: 1.6; font-style: italic;">&ldquo;But she, being mortal, of that boy did die;<br>And for her sake do I rear up her boy,<br>And for her sake I will not part with him.&rdquo;</blockquote>
+        <div style="font-size: 12px; color: #1a2340; margin: -4px 0 12px 0;">Shakespeare, <em>A Midsummer Night&rsquo;s Dream</em>, 2.1 (public domain)</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The two positions are not equal in kind. Oberon wants a possession. Titania is keeping a promise to the dead. Neither gives way, and the play&rsquo;s fairy plot starts from that deadlock.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The throughline for the module appears here in miniature. Athens asked what a community owes its ruler and what a ruler owes the community. In the wood, the rulers&rsquo; private quarrel has public consequences, and the speech names them.</p>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHAT DOES THE SPEECH DO?</div>
+            <div class="widget-question">Choose the reading the text best supports.</div>
+
+            <div class="widget-row" data-correct="1" data-fb="Right. The list moves from the rulers to the winds, the rivers, the ox and the ploughman, and the seasons. The effects reach those who had no part in the quarrel." data-hint="Follow the order of the images: winds, rivers, the ox and the ploughman, the seasons. Who is affected at the end of the chain, and did they take part in the quarrel?">
+                <div class="widget-row-prompt">1. What is the main effect of Titania&rsquo;s long list of floods, rotted crops, and out-of-season frosts?</div>
+                <div class="widget-options">
+                    <button data-choice="0">It proves she cares more about the harvest than about the child she is protecting.</button>
+                    <button data-choice="1">It shows the quarrel reaching past the rulers to the farms and the land.</button>
+                    <button data-choice="2">It proves Oberon alone is the cause, since every harm follows from his demand.</button>
+                    <button data-choice="3">It is a weather report that has no link to the plot or to the characters.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-fb="Correct. Oberon does not answer the argument about the seasons. He restates his demand, so the remedy depends on Titania giving way." data-hint="Check what Oberon asks for in the next lines. Does he offer anything, or does he repeat his demand?">
+                <div class="widget-row-prompt">2. Oberon replies, &ldquo;Do you amend it, then. It lies in you.&rdquo; What does the reply do?</div>
+                <div class="widget-options">
+                    <button data-choice="0">It puts the remedy on Titania: she must give up the boy to end it.</button>
+                    <button data-choice="1">It accepts her blame and offers to give up his own demand for the boy.</button>
+                    <button data-choice="2">It denies that the disorder in the seasons has anything to do with the rulers.</button>
+                    <button data-choice="3">It invites Titania to ask Theseus to judge the quarrel between the two of them.</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #3B4E8C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 14px;">&#128273; KEY TERMS</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>changeling</strong>: a child taken or exchanged; here, the boy over whom the rulers quarrel.</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>discord</strong>: disagreement that breaks up order; Titania&rsquo;s word is &ldquo;dissension.&rdquo;</div>
+        <div style="border-left: 3px solid #D0D9E8; padding-left: 14px; margin-bottom: 8px; font-size: 17px; color: #1a2340; line-height: 1.6;"><strong>cause and effect</strong>: a chain in which each event produces the next; Titania&rsquo;s speech is built as one.</div>
+    </div>
+
+</div>
+<!-- ===== /BODY WRAPPER ===== -->
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH 2 &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Week 2 &middot; The Fairy Quarrel</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<!-- ===== WIDGET RUNTIME ===== -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
